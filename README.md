@@ -1,18 +1,11 @@
-# Project D Ver.2.1 Mobile
+# PROJECT D Ver.3.1
 
-スマホからGitHubへアップロードしやすい、フォルダなし構成です。
+## 追加内容
+- ゼフィロス個別ページ（zephyros.html）
+- ゼフィロス成体サムネイル（zephyros_adult.jpg）
+- 図鑑カードから個別ページへのリンク
+- トップページのキャッチコピー更新
+- 最新更新情報・更新履歴をVer.3.1へ更新
 
-## アップロードするファイル
-- index.html
-- styles.css
-- script.js
-- grade_28.jpg
-- grade_30.jpg
-- grade_33.jpg
-- project_d_logo.jpg
-- project_d_brand.jpg
-- favicon.png
-
-README.mdは任意です。
-
-既存ファイルは同名で上書きしてください。
+## GitHubへの反映
+このフォルダ内のファイルをすべてリポジトリ直下へアップロードし、同名ファイルは上書きしてください。
