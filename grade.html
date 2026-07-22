@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="ドラゴンビレッジ3の等級システムを実測データから検証。">
+  <meta name="theme-color" content="#07111f">
+  <title>等級解析｜Project D</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html" aria-label="ホームへ">
+    <img class="brand-logo" src="project_d_logo.jpg" alt="Project D ロゴ">
+    <span><strong>PROJECT D</strong><small>ドラゴンビレッジ3 無課金攻略研究所</small></span>
+  </a>
+  <button id="menuButton" class="menu-button" aria-label="メニューを開く">☰</button>
+  <nav id="mainNav">
+    <a href="index.html">ホーム</a>
+    <a href="ranking.html">ランキング</a>
+    <a href="dragons.html">ドラゴン図鑑</a>
+    <a href="grade.html">等級解析</a>
+    <a href="tools.html">計算ツール</a>
+    <a href="about.html">Project Dについて</a>
+    <a href="updates.html">更新履歴</a>
+  </nav>
+</header>
+
+<main class="subpage">
+<section class="page-hero"><p class="eyebrow">GRADE ANALYSIS</p><h1>等級システム解析</h1><p>総合等級ではなく、6つの個別等級がそれぞれ対応する能力値に影響します。</p></section>
+<section class="section">
+<div class="gallery">
+  <figure><img src="grade_28.jpg" alt="等級2.8"><figcaption>総合2.8：HP4 / 攻1 / 防5 / 魔2 / 抵2 / 速3</figcaption></figure>
+  <figure><img src="grade_30.jpg" alt="等級3.0"><figcaption>総合3.0：HP3 / 攻5 / 防3 / 魔1 / 抵2 / 速4</figcaption></figure>
+  <figure><img src="grade_33.jpg" alt="等級3.3"><figcaption>総合3.3：HP5 / 攻5 / 防3 / 魔2 / 抵1 / 速4</figcaption></figure>
+</div>
+<div class="data-table-wrap">
+<table><thead><tr><th>総合等級</th><th>HP</th><th>攻撃</th><th>防御</th><th>魔法</th><th>抵抗</th><th>速度</th></tr></thead>
+<tbody><tr><td>2.8</td><td>367</td><td>541</td><td>373</td><td>357</td><td>357</td><td>310</td></tr><tr><td>3.0</td><td>361</td><td>561</td><td>361</td><td>357</td><td>353</td><td>316</td></tr><tr><td>3.3</td><td>373</td><td>561</td><td>361</td><td>357</td><td>357</td><td>316</td></tr></tbody></table>
+</div>
+<div class="notice confirmed-box"><span>確定情報</span>星上げ・等級上げ・限界突破には同じドラゴンが必要。素材側の高い個別等級を引き継げます。</div>
+<div class="notice hypothesis-box"><span>仮説</span>個別等級が対応ステータスへ独立して加算される。レベルによる補正量の変化は未検証です。</div>
+</section>
+</main>
+<footer>
+  <div><strong>PROJECT D</strong><span>ドラゴンビレッジ3 無課金攻略研究所</span></div>
+  <p>非公式・プレイヤー独自検証サイト。ゲーム内仕様は更新により変更される場合があります。</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

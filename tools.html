@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="ドラゴンビレッジ3のガチャ天井と星上げ参考値を計算。">
+  <meta name="theme-color" content="#07111f">
+  <title>計算ツール｜Project D</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html" aria-label="ホームへ">
+    <img class="brand-logo" src="project_d_logo.jpg" alt="Project D ロゴ">
+    <span><strong>PROJECT D</strong><small>ドラゴンビレッジ3 無課金攻略研究所</small></span>
+  </a>
+  <button id="menuButton" class="menu-button" aria-label="メニューを開く">☰</button>
+  <nav id="mainNav">
+    <a href="index.html">ホーム</a>
+    <a href="ranking.html">ランキング</a>
+    <a href="dragons.html">ドラゴン図鑑</a>
+    <a href="grade.html">等級解析</a>
+    <a href="tools.html">計算ツール</a>
+    <a href="about.html">Project Dについて</a>
+    <a href="updates.html">更新履歴</a>
+  </nav>
+</header>
+
+<main class="subpage">
+<section class="page-hero"><p class="eyebrow">TOOLS</p><h1>計算ツール</h1><p>現在判明している仕様を使った参考計算です。</p></section>
+<section class="section">
+<div class="tools-grid">
+<article class="tool-card"><h3>天井までのダイヤ計算</h3><label>現在のガチャポイント<input id="pityInput" type="number" min="0" max="200" value="0"></label><button id="calcPity" class="btn primary">計算</button><div id="pityResult" class="result">200ポイントまで残り200連・60,000ダイヤ</div></article>
+<article class="tool-card"><h3>星1→星5の参考値</h3><label>現在の能力値<input id="statInput" type="number" min="1" value="1000"></label><label>レア度<select id="growthType"><option value="1.085">Epic（実測約+8.5%）</option><option value="1.14">Legendary参考（ダークニクス約+14%）</option></select></label><button id="calcGrowth" class="btn primary">計算</button><div id="growthResult" class="result">参考値：1085</div></article>
+</div>
+</section>
+</main>
+<footer>
+  <div><strong>PROJECT D</strong><span>ドラゴンビレッジ3 無課金攻略研究所</span></div>
+  <p>非公式・プレイヤー独自検証サイト。ゲーム内仕様は更新により変更される場合があります。</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

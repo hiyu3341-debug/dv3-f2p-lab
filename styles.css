@@ -177,3 +177,35 @@ footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;paddin
     padding-left:1.15em
   }
 }
+
+/* Ver.3.0 multipage */
+.subpage{min-height:70vh}
+.page-hero{
+  padding:72px max(18px,calc((100vw - 1180px)/2)) 42px;
+  background:radial-gradient(circle at 85% 20%,rgba(79,140,255,.16),transparent 30%);
+  border-bottom:1px solid var(--line)
+}
+.page-hero h1{font-size:clamp(2.2rem,6vw,4.2rem);margin:.15em 0}
+.page-hero p:last-child{max-width:760px;color:var(--muted)}
+.menu-card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.menu-card{
+  display:block;padding:22px;border-radius:16px;background:linear-gradient(160deg,rgba(18,36,58,.95),rgba(11,26,43,.95));
+  border:1px solid var(--line);box-shadow:var(--shadow);transition:.2s transform,.2s border-color
+}
+.menu-card:hover{transform:translateY(-3px);border-color:var(--cyan)}
+.menu-card>span{color:var(--cyan);font-weight:900;letter-spacing:.12em}
+.menu-card h3{margin:.35em 0}
+.menu-card p{color:var(--muted);margin:0}
+.visitor-stat{display:flex!important;flex-direction:column;justify-content:center;align-items:flex-start;gap:8px}
+.visitor-stat img{max-width:100%;height:auto;border-radius:6px}
+.latest-update-section{padding-top:28px;padding-bottom:28px}
+.latest-update-card{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:88px 1fr;gap:22px;padding:24px;background:linear-gradient(160deg,rgba(18,36,58,.98),rgba(11,26,43,.98));border:1px solid #2a4563;border-radius:16px;box-shadow:var(--shadow)}
+.latest-icon{width:68px;height:68px;display:grid;place-items:center;border-radius:18px;background:linear-gradient(135deg,var(--cyan),var(--blue));color:#06111c;font-weight:1000}
+.latest-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.version-chip{padding:3px 9px;border-radius:999px;background:rgba(79,140,255,.16);color:#8fb8ff;font-size:.78rem;font-weight:900}.latest-link{color:var(--cyan);font-weight:800}
+@media(max-width:900px){.menu-card-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){
+ .menu-card-grid{grid-template-columns:1fr}
+ .page-hero{padding-top:52px;padding-bottom:32px}
+ .latest-update-card{grid-template-columns:1fr;gap:13px;padding:19px}
+ .latest-icon{width:56px;height:56px;border-radius:14px;font-size:.9rem}
+}

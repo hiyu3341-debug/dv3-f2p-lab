@@ -3,307 +3,90 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="ドラゴンビレッジ3（DV3）を無課金目線と実測データで検証する非公式攻略サイト。ドラゴン評価、等級、星上げ、ガチャ天井、育成難易度を掲載。">
+  <meta name="description" content="ドラゴンビレッジ3（DV3）を無課金目線と実測データで検証する非公式攻略サイト。">
   <meta name="theme-color" content="#07111f">
-  <title>ドラゴンビレッジ3攻略｜Project D（DV3無課金攻略研究所）</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>ドラゴンビレッジ3攻略｜Project D</title>
   <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#top" aria-label="トップへ">
-      <img class="brand-logo" src="project_d_logo.jpg" alt="Project D ロゴ">
-      <span>
-        <strong>PROJECT D</strong>
-        <small>ドラゴンビレッジ3 無課金攻略研究所</small>
-      </span>
-    </a>
-    <button id="menuButton" class="menu-button" aria-label="メニューを開く">☰</button>
-    <nav id="mainNav">
-      <a href="#ranking">ランキング</a>
-      <a href="#dragons">図鑑</a>
-      <a href="#grade">等級解析</a>
-      <a href="#tools">計算ツール</a>
-      <a href="#updates">更新履歴</a>
-    </nav>
-  </header>
+<header class="topbar">
+  <a class="brand" href="index.html" aria-label="ホームへ">
+    <img class="brand-logo" src="project_d_logo.jpg" alt="Project D ロゴ">
+    <span><strong>PROJECT D</strong><small>ドラゴンビレッジ3 無課金攻略研究所</small></span>
+  </a>
+  <button id="menuButton" class="menu-button" aria-label="メニューを開く">☰</button>
+  <nav id="mainNav">
+    <a href="index.html">ホーム</a>
+    <a href="ranking.html">ランキング</a>
+    <a href="dragons.html">ドラゴン図鑑</a>
+    <a href="grade.html">等級解析</a>
+    <a href="tools.html">計算ツール</a>
+    <a href="about.html">Project Dについて</a>
+    <a href="updates.html">更新履歴</a>
+  </nav>
+</header>
 
-  <main id="top">
-    <section class="hero">
-<div class="hero-grid">
-        <div>
-          <p class="eyebrow">PLAYER-VERIFIED DATA LAB</p>
-          <h1>感覚ではなく、<br><span>実測データ</span>で評価する。</h1>
-          <p class="hero-copy">
-            ドラゴンビレッジ3（DV3）を、理論上の最大値ではなく
-            <strong>無課金で実際に育て切れるか</strong>という視点で検証する非公式攻略データベースです。
-          </p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#ranking">暫定ランキング</a>
-            <a class="btn secondary" href="#dragons">ドラゴン検索</a>
+<main>
+  <section class="hero">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">PLAYER-VERIFIED DATA LAB</p>
+        <h1>感覚ではなく、<br><span>実測データ</span>で評価する。</h1>
+        <p class="hero-copy">ドラゴンビレッジ3（DV3）を、理論上の最大値ではなく
+        <strong>無課金で実際に育て切れるか</strong>という視点で検証する非公式攻略データベースです。</p>
+      </div>
+      <aside class="dashboard">
+        <div class="scanline"></div>
+        <p class="dashboard-title">DATABASE STATUS</p>
+        <div class="stat-grid">
+          <div><strong>6</strong><span>登録ドラゴン</span></div>
+          <div><strong>10</strong><span>実測データ</span></div>
+          <div><strong>3</strong><span>等級検体</span></div>
+          <div class="visitor-stat">
+            <img src="https://api.visitorbadge.io/api/VisitorHit?user=hiyu3341-debug&repo=dv3-f2p-lab&label=%E7%B4%AF%E8%A8%88%E8%A8%AA%E5%95%8F&labelColor=%23101f33&countColor=%234de2d0" alt="累計訪問者カウンター">
+            <span>ページ閲覧回数の目安</span>
           </div>
-          <div class="legend">
-            <span><i class="dot confirmed"></i>実測・確定</span>
-            <span><i class="dot hypothesis"></i>仮説</span>
-            <span><i class="dot pending"></i>検証中</span>
-          </div>
         </div>
-
-        <aside class="dashboard">
-          <div class="scanline"></div>
-          <p class="dashboard-title">DATABASE STATUS</p>
-          <div class="stat-grid">
-            <div><strong id="dragonCount">6</strong><span>登録ドラゴン</span></div>
-            <div><strong>10</strong><span>実測データ</span></div>
-            <div><strong>3</strong><span>等級検体</span></div>
-            <div class="visitor-stat">
-              <img
-                src="https://api.visitorbadge.io/api/VisitorHit?user=hiyu3341-debug&repo=dv3-f2p-lab&label=%E7%B4%AF%E8%A8%88%E8%A8%AA%E5%95%8F&labelColor=%23101f33&countColor=%234de2d0"
-                alt="累計訪問者カウンター"
-                loading="eager">
-              <span>ページ閲覧回数の目安</span>
-            </div>
-          </div>
-          <p class="last-update">最終更新：2026-07-22</p>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section latest-update-section" id="latest-update">
-      <div class="latest-update-card">
-        <div class="latest-icon">NEW</div>
-        <div class="latest-update-content">
-          <p class="eyebrow">LATEST UPDATE</p>
-          <h2>最新更新情報</h2>
-          <div class="latest-meta">
-            <time datetime="2026-07-22">2026年7月22日</time>
-            <span class="version-chip">Ver.2.4</span>
-          </div>
-          <h3>トップページの更新情報を見やすく改善</h3>
-          <ul>
-            <li>最新更新情報をDATABASE STATUSの直後に固定表示</li>
-            <li>更新日とバージョンを見やすく表示</li>
-            <li>更新履歴は従来どおりページ下部に保存</li>
-          </ul>
-          <a class="latest-link" href="#updates">過去の更新履歴を見る →</a>
-        </div>
-      </div>
-    </section>
-
-
-
-    <section class="section about-project">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">ABOUT PROJECT D</p>
-          <h2>Project Dとは？</h2>
-        </div>
-        <p>プレイヤーが確認した実測値を蓄積し、ドラゴンビレッジ3の育成と戦力評価を検証する非公式プロジェクトです。</p>
-      </div>
-      <div class="about-grid">
-        <article class="glass-card"><h3>実測を優先</h3><p>ゲーム画面で確認できた数値を、推測と分けて掲載します。</p></article>
-        <article class="glass-card"><h3>無課金視点</h3><p>同一ドラゴンの入手難易度まで含め、現実的な完成度で評価します。</p></article>
-        <article class="glass-card"><h3>更新前提</h3><p>新しいデータやアップデートに応じて、評価を継続的に修正します。</p></article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">RESEARCH POLICY</p>
-          <h2>評価の基本方針</h2>
-        </div>
-        <p>無課金評価では、完成時の強さだけでなく、同一ドラゴンを集める難しさも含めます。</p>
-      </div>
-      <div class="policy-grid">
-        <article class="glass-card"><b>35%</b><h3>固有アビリティ</h3><p>後から変えられない本体性能。</p></article>
-        <article class="glass-card"><b>25%</b><h3>基礎ステータス</h3><p>同条件で比較した能力値。</p></article>
-        <article class="glass-card"><b>25%</b><h3>育成難易度</h3><p>同一個体の入手性と重ねやすさ。</p></article>
-        <article class="glass-card"><b>15%</b><h3>伸びしろ</h3><p>星・等級上昇後の期待値。</p></article>
-      </div>
-      <div class="notice confirmed-box">
-        <span>確定情報</span>
-        星上げ・等級上げ・限界突破には同じドラゴンが必要。初期等級が低くても、素材側の高い個別等級を引き継げる。
-      </div>
-    </section>
-
-    <section id="ranking" class="section dark-panel">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">F2P TIER LIST</p>
-          <h2>無課金育成優先度 Ver.1</h2>
-        </div>
-        <p>情報量が少ないため暫定評価。確定情報と仮説を区別して掲載します。</p>
-      </div>
-
-      <div class="tier-list">
-        <article class="tier-card">
-          <div class="tier s">S</div>
-          <div class="tier-body">
-            <div class="title-row"><h3>ゼフィロス</h3><span class="pill epic">Epic</span><span class="status confirmed-label">実測</span></div>
-            <p>★5まで育成済みの実例があり、無課金でも完成形を目指しやすい。攻撃1186、速度1001。「名射手」でスキル命中率1.3倍。</p>
-            <div class="mini-bars">
-              <span>火力 <b style="width:82%"></b></span>
-              <span>育成性 <b style="width:88%"></b></span>
-              <span>汎用性 <b style="width:80%"></b></span>
-            </div>
-          </div>
-        </article>
-
-        <article class="tier-card">
-          <div class="tier a">A</div>
-          <div class="tier-body">
-            <div class="title-row"><h3>ダークニクス</h3><span class="pill legendary">Legendary</span><span class="status confirmed-label">実測</span></div>
-            <p>基礎値が高く、「無欠」で被ダメージ後の状態異常・状態変化・能力値変化を受けない。無課金では同一個体確保が難しい。</p>
-            <div class="mini-bars">
-              <span>火力 <b style="width:94%"></b></span>
-              <span>育成性 <b style="width:38%"></b></span>
-              <span>汎用性 <b style="width:92%"></b></span>
-            </div>
-          </div>
-        </article>
-
-        <article class="tier-card">
-          <div class="tier a">A</div>
-          <div class="tier-body">
-            <div class="title-row"><h3>トドルムトム</h3><span class="pill epic">Epic</span><span class="status hypothesis-label">暫定</span></div>
-            <p>全体的に安定した能力。「浄化」は交代時に状態異常を解除するため、状態異常環境で価値が上がる。</p>
-          </div>
-        </article>
-
-        <article class="tier-card">
-          <div class="tier b">B</div>
-          <div class="tier-body">
-            <div class="title-row"><h3>タイフーンドラゴン</h3><span class="pill epic">Epic</span><span class="status pending-label">検証中</span></div>
-            <p>防御寄り。「絶対気流」は天候効果を無効化するが、現環境での天候採用率が不明。</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="dragons" class="section">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">DRAGON DATABASE</p>
-          <h2>ドラゴン図鑑</h2>
-        </div>
-        <p>名前・レア度・役割で絞り込めます。</p>
-      </div>
-
-      <div class="filterbar">
-        <input id="searchInput" type="search" placeholder="ドラゴン名・アビリティで検索">
-        <select id="rarityFilter">
-          <option value="all">全レア度</option>
-          <option value="Epic">Epic</option>
-          <option value="Legendary">Legendary</option>
-        </select>
-        <select id="roleFilter">
-          <option value="all">全役割</option>
-          <option value="physical">物理</option>
-          <option value="magic">魔法</option>
-          <option value="defense">耐久</option>
-          <option value="support">補助</option>
-        </select>
-      </div>
-
-      <div id="dragonGrid" class="dragon-grid"></div>
-      <p id="noResults" class="no-results" hidden>該当するドラゴンがありません。</p>
-    </section>
-
-    <section id="grade" class="section dark-panel">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">GRADE ANALYSIS</p>
-          <h2>等級システム解析</h2>
-        </div>
-        <p>総合等級は6つの個別等級の平均。総合値だけでは個体性能を判断できません。</p>
-      </div>
-
-      <div class="gallery">
-        <figure><img src="grade_28.jpg" alt="等級2.8"><figcaption>総合2.8：HP4 / 攻1 / 防5 / 魔2 / 抵2 / 速3</figcaption></figure>
-        <figure><img src="grade_30.jpg" alt="等級3.0"><figcaption>総合3.0：HP3 / 攻5 / 防3 / 魔1 / 抵2 / 速4</figcaption></figure>
-        <figure><img src="grade_33.jpg" alt="等級3.3"><figcaption>総合3.3：HP5 / 攻5 / 防3 / 魔2 / 抵1 / 速4</figcaption></figure>
-      </div>
-
-      <div class="data-table-wrap">
-        <table>
-          <thead><tr><th>総合等級</th><th>HP</th><th>攻撃</th><th>防御</th><th>魔法</th><th>抵抗</th><th>速度</th></tr></thead>
-          <tbody>
-            <tr><td>2.8</td><td>367</td><td>541</td><td>373</td><td>357</td><td>357</td><td>310</td></tr>
-            <tr><td>3.0</td><td>361</td><td>561</td><td>361</td><td>357</td><td>353</td><td>316</td></tr>
-            <tr><td>3.3</td><td>373</td><td>561</td><td>361</td><td>357</td><td>357</td><td>316</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="notice hypothesis-box">
-        <span>現在の仮説</span>
-        各個別等級が対応する能力値へ独立して加算される。Lv1とLv50で補正量が同じかは未検証。
-      </div>
-    </section>
-
-    <section id="tools" class="section">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">TOOLS</p>
-          <h2>簡易計算ツール</h2>
-        </div>
-        <p>現在分かっている範囲の参考計算です。</p>
-      </div>
-
-      <div class="tools-grid">
-        <article class="tool-card">
-          <h3>天井までのダイヤ計算</h3>
-          <label>現在のガチャポイント
-            <input id="pityInput" type="number" min="0" max="200" value="0">
-          </label>
-          <button id="calcPity" class="btn primary">計算</button>
-          <div id="pityResult" class="result">200ポイントまで残り200連・60,000ダイヤ</div>
-        </article>
-
-        <article class="tool-card">
-          <h3>星1→星5の参考値</h3>
-          <label>現在の能力値
-            <input id="statInput" type="number" min="1" value="1000">
-          </label>
-          <label>レア度
-            <select id="growthType">
-              <option value="1.085">Epic（実測約+8.5%）</option>
-              <option value="1.14">Legendary参考（ダークニクス約+14%）</option>
-            </select>
-          </label>
-          <button id="calcGrowth" class="btn primary">計算</button>
-          <div id="growthResult" class="result">参考値：1085</div>
-        </article>
-      </div>
-    </section>
-
-    <section id="updates" class="section dark-panel">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">CHANGELOG</p>
-          <h2>更新履歴</h2>
-        </div>
-      </div>
-      <div class="timeline">
-        <article><time>2026-07-22</time><div><h3>Ver.2.4</h3><p>最新更新情報をDATABASE STATUS直後へ固定表示し、更新日・バージョン・過去履歴へのリンクを追加。</p></div></article>
-        <article><time>2026-07-22</time><div><h3>Ver.2.3</h3><p>累計訪問者カウンター、最新更新情報、DATABASE STATUSの情報カードを追加。</p></div></article>
-        <article><time>2026-07-22</time><div><h3>Ver.2.2</h3><p>スマホ表示を整理し、巨大ロゴ画像を削除。ヘッダーの小型ロゴとキャッチコピーを主役にした構成へ変更。</p></div></article>
-        <article><time>2026-07-22</time><div><h3>Ver.2.1</h3><p>Project D正式ロゴ、SEOタイトル、ファビコン、Project D紹介、スマホ向けブランド表示を追加。</p></div></article>
-        <article><time>2026-07-22</time><div><h3>Ver.2</h3><p>ダークデザイン、検索機能、図鑑カード、計算ツール、情報区分ラベルを追加。</p></div></article>
-        <article><time>2026-07-22</time><div><h3>Ver.1</h3><p>暫定ランキング、実測ステータス、等級検証を公開準備。</p></div></article>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div>
-      <strong>PROJECT D</strong>
-      <span>DV3 無課金攻略研究所</span>
+        <p class="last-update">最終更新：2026-07-22</p>
+      </aside>
     </div>
-    <p>非公式・プレイヤー独自検証サイト。ゲーム内仕様は更新により変更される場合があります。</p>
-  </footer>
+  </section>
 
-  <script src="script.js"></script>
+  <section class="section latest-update-section">
+    <div class="latest-update-card">
+      <div class="latest-icon">NEW</div>
+      <div>
+        <p class="eyebrow">LATEST UPDATE</p>
+        <h2>最新更新情報</h2>
+        <div class="latest-meta"><time datetime="2026-07-22">2026年7月22日</time><span class="version-chip">Ver.3.0</span></div>
+        <h3>複数ページ構成へ移行</h3>
+        <ul>
+          <li>ランキング・図鑑・等級解析・計算ツールを別ページ化</li>
+          <li>ホーム画面をメニュー中心に整理</li>
+          <li>各ページへ直接移動できるリンクカードを追加</li>
+        </ul>
+        <a class="latest-link" href="updates.html">更新履歴を見る →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><div><p class="eyebrow">SITE MENU</p><h2>メニュー</h2></div><p>調べたい内容を選んでください。</p></div>
+    <div class="menu-card-grid">
+      <a class="menu-card" href="ranking.html"><span>01</span><h3>無課金ランキング</h3><p>育成難易度を含めた暫定評価。</p></a>
+      <a class="menu-card" href="dragons.html"><span>02</span><h3>ドラゴン図鑑</h3><p>名前・レア度・役割で検索。</p></a>
+      <a class="menu-card" href="grade.html"><span>03</span><h3>等級解析</h3><p>個別等級と能力値の関係を検証。</p></a>
+      <a class="menu-card" href="tools.html"><span>04</span><h3>計算ツール</h3><p>ガチャ天井・星上げ参考計算。</p></a>
+      <a class="menu-card" href="about.html"><span>05</span><h3>Project Dについて</h3><p>評価基準と情報区分を掲載。</p></a>
+      <a class="menu-card" href="updates.html"><span>06</span><h3>更新履歴</h3><p>サイトの変更内容を確認。</p></a>
+    </div>
+  </section>
+</main>
+<footer>
+  <div><strong>PROJECT D</strong><span>ドラゴンビレッジ3 無課金攻略研究所</span></div>
+  <p>非公式・プレイヤー独自検証サイト。ゲーム内仕様は更新により変更される場合があります。</p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>

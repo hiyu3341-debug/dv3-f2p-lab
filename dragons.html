@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="ドラゴンビレッジ3のドラゴン図鑑。実測ステータスと固有アビリティを検索。">
+  <meta name="theme-color" content="#07111f">
+  <title>ドラゴン図鑑｜Project D</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html" aria-label="ホームへ">
+    <img class="brand-logo" src="project_d_logo.jpg" alt="Project D ロゴ">
+    <span><strong>PROJECT D</strong><small>ドラゴンビレッジ3 無課金攻略研究所</small></span>
+  </a>
+  <button id="menuButton" class="menu-button" aria-label="メニューを開く">☰</button>
+  <nav id="mainNav">
+    <a href="index.html">ホーム</a>
+    <a href="ranking.html">ランキング</a>
+    <a href="dragons.html">ドラゴン図鑑</a>
+    <a href="grade.html">等級解析</a>
+    <a href="tools.html">計算ツール</a>
+    <a href="about.html">Project Dについて</a>
+    <a href="updates.html">更新履歴</a>
+  </nav>
+</header>
+
+<main class="subpage">
+<section class="page-hero"><p class="eyebrow">DRAGON DATABASE</p><h1>ドラゴン図鑑</h1><p>名前・レア度・役割で検索できます。</p></section>
+<section class="section">
+<div class="filterbar">
+  <input id="searchInput" type="search" placeholder="ドラゴン名・アビリティで検索">
+  <select id="rarityFilter"><option value="all">全レア度</option><option value="Epic">Epic</option><option value="Legendary">Legendary</option></select>
+  <select id="roleFilter"><option value="all">全役割</option><option value="physical">物理</option><option value="magic">魔法</option><option value="defense">耐久</option><option value="support">補助</option></select>
+</div>
+<div id="dragonGrid" class="dragon-grid"></div>
+<p id="noResults" class="no-results" hidden>該当するドラゴンがありません。</p>
+</section>
+</main>
+<footer>
+  <div><strong>PROJECT D</strong><span>ドラゴンビレッジ3 無課金攻略研究所</span></div>
+  <p>非公式・プレイヤー独自検証サイト。ゲーム内仕様は更新により変更される場合があります。</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
