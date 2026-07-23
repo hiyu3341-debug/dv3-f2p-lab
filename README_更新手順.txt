@@ -1,17 +1,18 @@
-PROJECT D Ver.4.5 更新手順
+PROJECT D Ver.4.6 等級補正研究ページ追加
 
-1. このZIPを解凍します。
-2. 中にある全ファイルを、GitHubリポジトリ dv3-f2p-lab の直下へアップロードします。
-3. 同名ファイルは上書きしてください。
-4. GitHub Pagesへの反映後、トップ・図鑑一覧・各個別ページを確認してください。
+【アップロードするファイル】
+・grade-research.html（新規）
+・grade_bonus_graph.png（新規）
+・index.html（差し替え）
+・updates.html（差し替え）
+・sitemap.xml（差し替え）
+・styles.css（差し替え）
 
-追加:
-- エイリアンドラゴン
-- ルネラ
-- シャムドラゴン
+【手順】
+1. ZIPを解凍します。
+2. GitHubの dv3-f2p-lab リポジトリを開きます。
+3. Add file → Upload files を選びます。
+4. 上記6ファイルをまとめてアップロードします。
+5. Commit changes を押します。
 
-更新:
-- index.html
-- updates.html
-- script.js
-- sitemap.xml
+既存ファイルは同名で上書きしてください。script.jsは変更していないためアップロード不要です。
