@@ -232,7 +232,12 @@ footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;paddin
 .skill-list{display:grid;gap:12px}.skill-item{padding:16px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.03)}
 .skill-item h3{margin:0 0 7px;font-size:1rem}.skill-meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:7px}.skill-meta span{font-size:.72rem;padding:3px 8px;border-radius:999px;background:rgba(79,140,255,.14);color:#9fc2ff}.skill-item p{margin:0;color:#c7d4e5}
 .research-table td:first-child{font-weight:800;white-space:nowrap}
-@media(max-width:700px){.stage-gallery{grid-template-columns:1fr}.stage-card{max-width:360px;margin-inline:auto;width:100%}}
+@media(max-width:700px){
+  .stage-gallery{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+  .stage-card{width:100%;min-width:0;margin:0;border-radius:9px}
+  .stage-card img{width:100%;aspect-ratio:1/1;object-fit:cover}
+  .stage-card figcaption{padding:7px 3px;font-size:.66rem;line-height:1.25}
+}
 
 /* Ver.4 SEO / breadcrumb */
 .breadcrumb{max-width:1180px;margin:0 auto;padding:14px 20px 0;display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.82rem;color:#8fa5b9}
