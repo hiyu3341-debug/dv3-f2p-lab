@@ -1,44 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="ドラゴンビレッジ3のガチャ天井と星上げ参考値を計算。">
-  <meta name="theme-color" content="#07111f">
-  <title>計算ツール｜Project D</title>
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="stylesheet" href="styles.css">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="ドラゴンビレッジ3のガチャ天井や星上げ・育成計画に使える無課金向け参考計算ツール。" name="description"/>
+<meta content="#07111f" name="theme-color"/>
+<title>ガチャ天井・育成計算ツール｜ドラゴンビレッジ3</title>
+<link href="favicon.png" rel="icon" type="image/png"/>
+<link href="styles.css" rel="stylesheet"/>
+<link href="https://hiyu3341-debug.github.io/dv3-f2p-lab/tools.html" rel="canonical"/><meta content="ja_JP" property="og:locale"/><meta content="website" property="og:type"/><meta content="PROJECT D｜ドラゴンビレッジ3 無課金攻略研究所" property="og:site_name"/><meta content="ガチャ天井・育成計算ツール｜ドラゴンビレッジ3" property="og:title"/><meta content="ドラゴンビレッジ3のガチャ天井や星上げ・育成計画に使える無課金向け参考計算ツール。" property="og:description"/><meta content="https://hiyu3341-debug.github.io/dv3-f2p-lab/tools.html" property="og:url"/><meta content="https://hiyu3341-debug.github.io/dv3-f2p-lab/project_d_logo.jpg" property="og:image"/><meta content="PROJECT D ロゴ" property="og:image:alt"/><meta content="summary" name="twitter:card"/><meta content="ガチャ天井・育成計算ツール｜ドラゴンビレッジ3" name="twitter:title"/><meta content="ドラゴンビレッジ3のガチャ天井や星上げ・育成計画に使える無課金向け参考計算ツール。" name="twitter:description"/><meta content="https://hiyu3341-debug.github.io/dv3-f2p-lab/project_d_logo.jpg" name="twitter:image"/><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://hiyu3341-debug.github.io/dv3-f2p-lab/#website",
+      "url": "https://hiyu3341-debug.github.io/dv3-f2p-lab/",
+      "name": "PROJECT D｜ドラゴンビレッジ3 無課金攻略研究所",
+      "inLanguage": "ja",
+      "description": "ドラゴンビレッジ3（DV3）を無課金目線で検証。ドラゴン図鑑、実測能力値、等級研究、交配・孵化時間、育成データを掲載。"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://hiyu3341-debug.github.io/dv3-f2p-lab/tools.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://hiyu3341-debug.github.io/dv3-f2p-lab/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "計算ツール",
+          "item": "https://hiyu3341-debug.github.io/dv3-f2p-lab/tools.html"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://hiyu3341-debug.github.io/dv3-f2p-lab/tools.html#page",
+      "url": "https://hiyu3341-debug.github.io/dv3-f2p-lab/tools.html",
+      "headline": "ガチャ天井・育成計算ツール｜ドラゴンビレッジ3",
+      "name": "ガチャ天井・育成計算ツール｜ドラゴンビレッジ3",
+      "description": "ドラゴンビレッジ3のガチャ天井や星上げ・育成計画に使える無課金向け参考計算ツール。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@id": "https://hiyu3341-debug.github.io/dv3-f2p-lab/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://hiyu3341-debug.github.io/dv3-f2p-lab/tools.html#breadcrumb"
+      },
+      "image": "https://hiyu3341-debug.github.io/dv3-f2p-lab/project_d_logo.jpg"
+    }
+  ]
+}</script></head>
 <body>
 <header class="topbar">
-  <a class="brand" href="index.html" aria-label="ホームへ">
-    <img class="brand-logo" src="project_d_logo.jpg" alt="Project D ロゴ">
-    <span><strong>PROJECT D</strong><small>ドラゴンビレッジ3 無課金攻略研究所</small></span>
-  </a>
-  <button id="menuButton" class="menu-button" aria-label="メニューを開く">☰</button>
-  <nav id="mainNav">
-    <a href="index.html">ホーム</a>
-    <a href="ranking.html">ランキング</a>
-    <a href="dragons.html">ドラゴン図鑑</a>
-    <a href="grade.html">等級解析</a>
-    <a href="tools.html">計算ツール</a>
-    <a href="about.html">Project Dについて</a>
-    <a href="updates.html">更新履歴</a>
-  </nav>
+<a aria-label="ホームへ" class="brand" href="index.html">
+<img alt="Project D ロゴ" class="brand-logo" src="project_d_logo.jpg"/>
+<span><strong>PROJECT D</strong><small>ドラゴンビレッジ3 無課金攻略研究所</small></span>
+</a>
+<button aria-label="メニューを開く" class="menu-button" id="menuButton">☰</button>
+<nav id="mainNav">
+<a href="index.html">ホーム</a>
+<a href="ranking.html">ランキング</a>
+<a href="dragons.html">ドラゴン図鑑</a>
+<a href="grade.html">等級解析</a>
+<a href="tools.html">計算ツール</a>
+<a href="about.html">Project Dについて</a>
+<a href="updates.html">更新履歴</a>
+</nav>
 </header>
-
-<main class="subpage">
+<main class="subpage"><nav aria-label="パンくずリスト" class="breadcrumb"><a href="index.html">ホーム</a><span>›</span><span aria-current="page">計算ツール</span></nav>
 <section class="page-hero"><p class="eyebrow">TOOLS</p><h1>計算ツール</h1><p>現在判明している仕様を使った参考計算です。</p></section>
 <section class="section">
 <div class="tools-grid">
-<article class="tool-card"><h3>天井までのダイヤ計算</h3><label>現在のガチャポイント<input id="pityInput" type="number" min="0" max="200" value="0"></label><button id="calcPity" class="btn primary">計算</button><div id="pityResult" class="result">200ポイントまで残り200連・60,000ダイヤ</div></article>
-<article class="tool-card"><h3>星1→星5の参考値</h3><label>現在の能力値<input id="statInput" type="number" min="1" value="1000"></label><label>レア度<select id="growthType"><option value="1.085">Epic（実測約+8.5%）</option><option value="1.14">Legendary参考（ダークニクス約+14%）</option></select></label><button id="calcGrowth" class="btn primary">計算</button><div id="growthResult" class="result">参考値：1085</div></article>
+<article class="tool-card"><h3>天井までのダイヤ計算</h3><label>現在のガチャポイント<input id="pityInput" max="200" min="0" type="number" value="0"/></label><button class="btn primary" id="calcPity">計算</button><div class="result" id="pityResult">200ポイントまで残り200連・60,000ダイヤ</div></article>
+<article class="tool-card"><h3>星1→星5の参考値</h3><label>現在の能力値<input id="statInput" min="1" type="number" value="1000"/></label><label>レア度<select id="growthType"><option value="1.085">Epic（実測約+8.5%）</option><option value="1.14">Legendary参考（ダークニクス約+14%）</option></select></label><button class="btn primary" id="calcGrowth">計算</button><div class="result" id="growthResult">参考値：1085</div></article>
 </div>
 </section>
 </main>
 <footer>
-  <div><strong>PROJECT D</strong><span>ドラゴンビレッジ3 無課金攻略研究所</span></div>
-  <p>非公式・プレイヤー独自検証サイト。ゲーム内仕様は更新により変更される場合があります。</p>
+<div><strong>PROJECT D</strong><span>ドラゴンビレッジ3 無課金攻略研究所</span></div>
+<p>非公式・プレイヤー独自検証サイト。ゲーム内仕様は更新により変更される場合があります。</p>
 </footer>
 <script src="script.js"></script>
 </body>

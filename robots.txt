@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hiyu3341-debug.github.io/dv3-f2p-lab/sitemap.xml

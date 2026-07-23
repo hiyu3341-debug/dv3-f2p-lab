@@ -1,47 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="ドラゴンビレッジ3のドラゴン図鑑。実測ステータスと固有アビリティを検索。">
-  <meta name="theme-color" content="#07111f">
-  <title>ドラゴン図鑑｜Project D</title>
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="stylesheet" href="styles.css">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="ドラゴンビレッジ3のドラゴン図鑑。成長画像、★1・★5能力値、固有アビリティ、スキル、交配・孵化時間を実測データ中心に掲載。" name="description"/>
+<meta content="#07111f" name="theme-color"/>
+<title>ドラゴン図鑑・能力値一覧｜ドラゴンビレッジ3 PROJECT D</title>
+<link href="favicon.png" rel="icon" type="image/png"/>
+<link href="styles.css" rel="stylesheet"/>
+<link href="https://hiyu3341-debug.github.io/dv3-f2p-lab/dragons.html" rel="canonical"/><meta content="ja_JP" property="og:locale"/><meta content="website" property="og:type"/><meta content="PROJECT D｜ドラゴンビレッジ3 無課金攻略研究所" property="og:site_name"/><meta content="ドラゴン図鑑・能力値一覧｜ドラゴンビレッジ3 PROJECT D" property="og:title"/><meta content="ドラゴンビレッジ3のドラゴン図鑑。成長画像、★1・★5能力値、固有アビリティ、スキル、交配・孵化時間を実測データ中心に掲載。" property="og:description"/><meta content="https://hiyu3341-debug.github.io/dv3-f2p-lab/dragons.html" property="og:url"/><meta content="https://hiyu3341-debug.github.io/dv3-f2p-lab/project_d_logo.jpg" property="og:image"/><meta content="PROJECT D ロゴ" property="og:image:alt"/><meta content="summary" name="twitter:card"/><meta content="ドラゴン図鑑・能力値一覧｜ドラゴンビレッジ3 PROJECT D" name="twitter:title"/><meta content="ドラゴンビレッジ3のドラゴン図鑑。成長画像、★1・★5能力値、固有アビリティ、スキル、交配・孵化時間を実測データ中心に掲載。" name="twitter:description"/><meta content="https://hiyu3341-debug.github.io/dv3-f2p-lab/project_d_logo.jpg" name="twitter:image"/><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://hiyu3341-debug.github.io/dv3-f2p-lab/#website",
+      "url": "https://hiyu3341-debug.github.io/dv3-f2p-lab/",
+      "name": "PROJECT D｜ドラゴンビレッジ3 無課金攻略研究所",
+      "inLanguage": "ja",
+      "description": "ドラゴンビレッジ3（DV3）を無課金目線で検証。ドラゴン図鑑、実測能力値、等級研究、交配・孵化時間、育成データを掲載。"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://hiyu3341-debug.github.io/dv3-f2p-lab/dragons.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://hiyu3341-debug.github.io/dv3-f2p-lab/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "ドラゴン図鑑",
+          "item": "https://hiyu3341-debug.github.io/dv3-f2p-lab/dragons.html"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://hiyu3341-debug.github.io/dv3-f2p-lab/dragons.html#page",
+      "url": "https://hiyu3341-debug.github.io/dv3-f2p-lab/dragons.html",
+      "headline": "ドラゴン図鑑・能力値一覧｜ドラゴンビレッジ3 PROJECT D",
+      "name": "ドラゴン図鑑・能力値一覧｜ドラゴンビレッジ3 PROJECT D",
+      "description": "ドラゴンビレッジ3のドラゴン図鑑。成長画像、★1・★5能力値、固有アビリティ、スキル、交配・孵化時間を実測データ中心に掲載。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@id": "https://hiyu3341-debug.github.io/dv3-f2p-lab/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://hiyu3341-debug.github.io/dv3-f2p-lab/dragons.html#breadcrumb"
+      },
+      "image": "https://hiyu3341-debug.github.io/dv3-f2p-lab/project_d_logo.jpg"
+    }
+  ]
+}</script></head>
 <body>
 <header class="topbar">
-  <a class="brand" href="index.html" aria-label="ホームへ">
-    <img class="brand-logo" src="project_d_logo.jpg" alt="Project D ロゴ">
-    <span><strong>PROJECT D</strong><small>ドラゴンビレッジ3 無課金攻略研究所</small></span>
-  </a>
-  <button id="menuButton" class="menu-button" aria-label="メニューを開く">☰</button>
-  <nav id="mainNav">
-    <a href="index.html">ホーム</a>
-    <a href="ranking.html">ランキング</a>
-    <a href="dragons.html">ドラゴン図鑑</a>
-    <a href="grade.html">等級解析</a>
-    <a href="tools.html">計算ツール</a>
-    <a href="about.html">Project Dについて</a>
-    <a href="updates.html">更新履歴</a>
-  </nav>
+<a aria-label="ホームへ" class="brand" href="index.html">
+<img alt="Project D ロゴ" class="brand-logo" src="project_d_logo.jpg"/>
+<span><strong>PROJECT D</strong><small>ドラゴンビレッジ3 無課金攻略研究所</small></span>
+</a>
+<button aria-label="メニューを開く" class="menu-button" id="menuButton">☰</button>
+<nav id="mainNav">
+<a href="index.html">ホーム</a>
+<a href="ranking.html">ランキング</a>
+<a href="dragons.html">ドラゴン図鑑</a>
+<a href="grade.html">等級解析</a>
+<a href="tools.html">計算ツール</a>
+<a href="about.html">Project Dについて</a>
+<a href="updates.html">更新履歴</a>
+</nav>
 </header>
-
-<main class="subpage">
+<main class="subpage"><nav aria-label="パンくずリスト" class="breadcrumb"><a href="index.html">ホーム</a><span>›</span><span aria-current="page">ドラゴン図鑑</span></nav>
 <section class="page-hero"><p class="eyebrow">DRAGON DATABASE</p><h1>ドラゴン図鑑</h1><p>名前・レア度・役割で検索できます。</p></section>
 <section class="section">
 <div class="filterbar">
-  <input id="searchInput" type="search" placeholder="ドラゴン名・アビリティで検索">
-  <select id="rarityFilter"><option value="all">全レア度</option><option value="Epic">Epic</option><option value="Legendary">Legendary</option></select>
-  <select id="roleFilter"><option value="all">全役割</option><option value="physical">物理</option><option value="magic">魔法</option><option value="defense">耐久</option><option value="support">補助</option></select>
+<input id="searchInput" placeholder="ドラゴン名・アビリティで検索" type="search"/>
+<select id="rarityFilter"><option value="all">全レア度</option><option value="Epic">Epic</option><option value="Legendary">Legendary</option></select>
+<select id="roleFilter"><option value="all">全役割</option><option value="physical">物理</option><option value="magic">魔法</option><option value="defense">耐久</option><option value="support">補助</option></select>
 </div>
-<div id="dragonGrid" class="dragon-grid"></div>
-<p id="noResults" class="no-results" hidden>該当するドラゴンがありません。</p>
+<div class="dragon-grid" id="dragonGrid"></div>
+<p class="no-results" hidden="" id="noResults">該当するドラゴンがありません。</p>
 </section>
 </main>
 <footer>
-  <div><strong>PROJECT D</strong><span>ドラゴンビレッジ3 無課金攻略研究所</span></div>
-  <p>非公式・プレイヤー独自検証サイト。ゲーム内仕様は更新により変更される場合があります。</p>
+<div><strong>PROJECT D</strong><span>ドラゴンビレッジ3 無課金攻略研究所</span></div>
+<p>非公式・プレイヤー独自検証サイト。ゲーム内仕様は更新により変更される場合があります。</p>
 </footer>
 <script src="script.js"></script>
 </body>

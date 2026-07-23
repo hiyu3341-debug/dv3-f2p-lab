@@ -1,39 +1,97 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="ドラゴンビレッジ3の等級システムを実測データから検証。">
-  <meta name="theme-color" content="#07111f">
-  <title>等級解析｜Project D</title>
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="stylesheet" href="styles.css">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="ドラゴンビレッジ3の総合等級・個別等級が能力値に与える影響を、育成個体の実測データから検証する研究ページ。" name="description"/>
+<meta content="#07111f" name="theme-color"/>
+<title>等級と能力値の関係を実測検証｜ドラゴンビレッジ3</title>
+<link href="favicon.png" rel="icon" type="image/png"/>
+<link href="styles.css" rel="stylesheet"/>
+<link href="https://hiyu3341-debug.github.io/dv3-f2p-lab/grade.html" rel="canonical"/><meta content="ja_JP" property="og:locale"/><meta content="article" property="og:type"/><meta content="PROJECT D｜ドラゴンビレッジ3 無課金攻略研究所" property="og:site_name"/><meta content="等級と能力値の関係を実測検証｜ドラゴンビレッジ3" property="og:title"/><meta content="ドラゴンビレッジ3の総合等級・個別等級が能力値に与える影響を、育成個体の実測データから検証する研究ページ。" property="og:description"/><meta content="https://hiyu3341-debug.github.io/dv3-f2p-lab/grade.html" property="og:url"/><meta content="https://hiyu3341-debug.github.io/dv3-f2p-lab/project_d_logo.jpg" property="og:image"/><meta content="PROJECT D ロゴ" property="og:image:alt"/><meta content="summary" name="twitter:card"/><meta content="等級と能力値の関係を実測検証｜ドラゴンビレッジ3" name="twitter:title"/><meta content="ドラゴンビレッジ3の総合等級・個別等級が能力値に与える影響を、育成個体の実測データから検証する研究ページ。" name="twitter:description"/><meta content="https://hiyu3341-debug.github.io/dv3-f2p-lab/project_d_logo.jpg" name="twitter:image"/><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://hiyu3341-debug.github.io/dv3-f2p-lab/#website",
+      "url": "https://hiyu3341-debug.github.io/dv3-f2p-lab/",
+      "name": "PROJECT D｜ドラゴンビレッジ3 無課金攻略研究所",
+      "inLanguage": "ja",
+      "description": "ドラゴンビレッジ3（DV3）を無課金目線で検証。ドラゴン図鑑、実測能力値、等級研究、交配・孵化時間、育成データを掲載。"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://hiyu3341-debug.github.io/dv3-f2p-lab/grade.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://hiyu3341-debug.github.io/dv3-f2p-lab/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "等級解析",
+          "item": "https://hiyu3341-debug.github.io/dv3-f2p-lab/grade.html"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://hiyu3341-debug.github.io/dv3-f2p-lab/grade.html#page",
+      "url": "https://hiyu3341-debug.github.io/dv3-f2p-lab/grade.html",
+      "headline": "等級と能力値の関係を実測検証｜ドラゴンビレッジ3",
+      "name": "等級と能力値の関係を実測検証｜ドラゴンビレッジ3",
+      "description": "ドラゴンビレッジ3の総合等級・個別等級が能力値に与える影響を、育成個体の実測データから検証する研究ページ。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@id": "https://hiyu3341-debug.github.io/dv3-f2p-lab/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://hiyu3341-debug.github.io/dv3-f2p-lab/grade.html#breadcrumb"
+      },
+      "image": "https://hiyu3341-debug.github.io/dv3-f2p-lab/project_d_logo.jpg",
+      "author": {
+        "@type": "Organization",
+        "name": "PROJECT D"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "PROJECT D",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://hiyu3341-debug.github.io/dv3-f2p-lab/project_d_logo.jpg"
+        }
+      }
+    }
+  ]
+}</script></head>
 <body>
 <header class="topbar">
-  <a class="brand" href="index.html" aria-label="ホームへ">
-    <img class="brand-logo" src="project_d_logo.jpg" alt="Project D ロゴ">
-    <span><strong>PROJECT D</strong><small>ドラゴンビレッジ3 無課金攻略研究所</small></span>
-  </a>
-  <button id="menuButton" class="menu-button" aria-label="メニューを開く">☰</button>
-  <nav id="mainNav">
-    <a href="index.html">ホーム</a>
-    <a href="ranking.html">ランキング</a>
-    <a href="dragons.html">ドラゴン図鑑</a>
-    <a href="grade.html">等級解析</a>
-    <a href="tools.html">計算ツール</a>
-    <a href="about.html">Project Dについて</a>
-    <a href="updates.html">更新履歴</a>
-  </nav>
+<a aria-label="ホームへ" class="brand" href="index.html">
+<img alt="Project D ロゴ" class="brand-logo" src="project_d_logo.jpg"/>
+<span><strong>PROJECT D</strong><small>ドラゴンビレッジ3 無課金攻略研究所</small></span>
+</a>
+<button aria-label="メニューを開く" class="menu-button" id="menuButton">☰</button>
+<nav id="mainNav">
+<a href="index.html">ホーム</a>
+<a href="ranking.html">ランキング</a>
+<a href="dragons.html">ドラゴン図鑑</a>
+<a href="grade.html">等級解析</a>
+<a href="tools.html">計算ツール</a>
+<a href="about.html">Project Dについて</a>
+<a href="updates.html">更新履歴</a>
+</nav>
 </header>
-
-<main class="subpage">
+<main class="subpage"><nav aria-label="パンくずリスト" class="breadcrumb"><a href="index.html">ホーム</a><span>›</span><span aria-current="page">等級解析</span></nav>
 <section class="page-hero"><p class="eyebrow">GRADE ANALYSIS</p><h1>等級システム解析</h1><p>総合等級ではなく、6つの個別等級がそれぞれ対応する能力値に影響します。</p></section>
 <section class="section">
 <div class="gallery">
-  <figure><img src="grade_28.jpg" alt="等級2.8"><figcaption>総合2.8：HP4 / 攻1 / 防5 / 魔2 / 抵2 / 速3</figcaption></figure>
-  <figure><img src="grade_30.jpg" alt="等級3.0"><figcaption>総合3.0：HP3 / 攻5 / 防3 / 魔1 / 抵2 / 速4</figcaption></figure>
-  <figure><img src="grade_33.jpg" alt="等級3.3"><figcaption>総合3.3：HP5 / 攻5 / 防3 / 魔2 / 抵1 / 速4</figcaption></figure>
+<figure><img alt="等級2.8" src="grade_28.jpg"/><figcaption>総合2.8：HP4 / 攻1 / 防5 / 魔2 / 抵2 / 速3</figcaption></figure>
+<figure><img alt="等級3.0" src="grade_30.jpg"/><figcaption>総合3.0：HP3 / 攻5 / 防3 / 魔1 / 抵2 / 速4</figcaption></figure>
+<figure><img alt="等級3.3" src="grade_33.jpg"/><figcaption>総合3.3：HP5 / 攻5 / 防3 / 魔2 / 抵1 / 速4</figcaption></figure>
 </div>
 <div class="data-table-wrap">
 <table><thead><tr><th>総合等級</th><th>HP</th><th>攻撃</th><th>防御</th><th>魔法</th><th>抵抗</th><th>速度</th></tr></thead>
@@ -44,8 +102,8 @@
 </section>
 </main>
 <footer>
-  <div><strong>PROJECT D</strong><span>ドラゴンビレッジ3 無課金攻略研究所</span></div>
-  <p>非公式・プレイヤー独自検証サイト。ゲーム内仕様は更新により変更される場合があります。</p>
+<div><strong>PROJECT D</strong><span>ドラゴンビレッジ3 無課金攻略研究所</span></div>
+<p>非公式・プレイヤー独自検証サイト。ゲーム内仕様は更新により変更される場合があります。</p>
 </footer>
 <script src="script.js"></script>
 </body>

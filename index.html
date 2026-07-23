@@ -1,91 +1,112 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="ドラゴンビレッジ3（DV3）を無課金目線と実測データで検証する非公式攻略サイト。">
-  <meta name="theme-color" content="#07111f">
-  <title>ドラゴンビレッジ3攻略｜Project D</title>
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="stylesheet" href="styles.css">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="ドラゴンビレッジ3（DV3）を無課金目線で検証。ドラゴン図鑑、実測能力値、等級研究、交配・孵化時間、育成データを掲載。" name="description"/>
+<meta content="#07111f" name="theme-color"/>
+<title>ドラゴンビレッジ3 無課金攻略・実測データ｜PROJECT D</title>
+<link href="favicon.png" rel="icon" type="image/png"/>
+<link href="styles.css" rel="stylesheet"/>
+<link href="https://hiyu3341-debug.github.io/dv3-f2p-lab/" rel="canonical"/><meta content="ja_JP" property="og:locale"/><meta content="website" property="og:type"/><meta content="PROJECT D｜ドラゴンビレッジ3 無課金攻略研究所" property="og:site_name"/><meta content="ドラゴンビレッジ3 無課金攻略・実測データ｜PROJECT D" property="og:title"/><meta content="ドラゴンビレッジ3（DV3）を無課金目線で検証。ドラゴン図鑑、実測能力値、等級研究、交配・孵化時間、育成データを掲載。" property="og:description"/><meta content="https://hiyu3341-debug.github.io/dv3-f2p-lab/" property="og:url"/><meta content="https://hiyu3341-debug.github.io/dv3-f2p-lab/project_d_logo.jpg" property="og:image"/><meta content="PROJECT D ロゴ" property="og:image:alt"/><meta content="summary" name="twitter:card"/><meta content="ドラゴンビレッジ3 無課金攻略・実測データ｜PROJECT D" name="twitter:title"/><meta content="ドラゴンビレッジ3（DV3）を無課金目線で検証。ドラゴン図鑑、実測能力値、等級研究、交配・孵化時間、育成データを掲載。" name="twitter:description"/><meta content="https://hiyu3341-debug.github.io/dv3-f2p-lab/project_d_logo.jpg" name="twitter:image"/><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://hiyu3341-debug.github.io/dv3-f2p-lab/#website",
+      "url": "https://hiyu3341-debug.github.io/dv3-f2p-lab/",
+      "name": "PROJECT D｜ドラゴンビレッジ3 無課金攻略研究所",
+      "inLanguage": "ja",
+      "description": "ドラゴンビレッジ3（DV3）を無課金目線で検証。ドラゴン図鑑、実測能力値、等級研究、交配・孵化時間、育成データを掲載。"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://hiyu3341-debug.github.io/dv3-f2p-lab/#webpage",
+      "url": "https://hiyu3341-debug.github.io/dv3-f2p-lab/",
+      "name": "ドラゴンビレッジ3 無課金攻略・実測データ｜PROJECT D",
+      "isPartOf": {
+        "@id": "https://hiyu3341-debug.github.io/dv3-f2p-lab/#website"
+      },
+      "description": "ドラゴンビレッジ3（DV3）を無課金目線で検証。ドラゴン図鑑、実測能力値、等級研究、交配・孵化時間、育成データを掲載。",
+      "inLanguage": "ja"
+    }
+  ]
+}</script></head>
 <body>
 <header class="topbar">
-  <a class="brand" href="index.html" aria-label="ホームへ">
-    <img class="brand-logo" src="project_d_logo.jpg" alt="Project D ロゴ">
-    <span><strong>PROJECT D</strong><small>ドラゴンビレッジ3 無課金攻略研究所</small></span>
-  </a>
-  <button id="menuButton" class="menu-button" aria-label="メニューを開く">☰</button>
-  <nav id="mainNav">
-    <a href="index.html">ホーム</a>
-    <a href="ranking.html">ランキング</a>
-    <a href="dragons.html">ドラゴン図鑑</a>
-    <a href="grade.html">等級解析</a>
-    <a href="tools.html">計算ツール</a>
-    <a href="about.html">Project Dについて</a>
-    <a href="updates.html">更新履歴</a>
-  </nav>
+<a aria-label="ホームへ" class="brand" href="index.html">
+<img alt="Project D ロゴ" class="brand-logo" src="project_d_logo.jpg"/>
+<span><strong>PROJECT D</strong><small>ドラゴンビレッジ3 無課金攻略研究所</small></span>
+</a>
+<button aria-label="メニューを開く" class="menu-button" id="menuButton">☰</button>
+<nav id="mainNav">
+<a href="index.html">ホーム</a>
+<a href="ranking.html">ランキング</a>
+<a href="dragons.html">ドラゴン図鑑</a>
+<a href="grade.html">等級解析</a>
+<a href="tools.html">計算ツール</a>
+<a href="about.html">Project Dについて</a>
+<a href="updates.html">更新履歴</a>
+</nav>
 </header>
-
 <main>
-  <section class="hero">
-    <div class="hero-grid">
-      <div>
-        <p class="eyebrow">PLAYER-VERIFIED DATA LAB</p>
-        <h1>無課金で本当に育てるなら、<br><span>どうなるか。</span></h1>
-        <p class="hero-copy">ドラゴンビレッジ3（DV3）を、理論上の最大値ではなく
+<section class="hero">
+<div class="hero-grid">
+<div>
+<p class="eyebrow">PLAYER-VERIFIED DATA LAB</p>
+<h1>無課金で本当に育てるなら、<br/><span>どうなるか。</span></h1>
+<p class="hero-copy">ドラゴンビレッジ3（DV3）を、理論上の最大値ではなく
         <strong>理論値ではなく、実際の育成時間と実測値</strong>で検証する非公式攻略データベースです。</p>
-      </div>
-      <aside class="dashboard">
-        <div class="scanline"></div>
-        <p class="dashboard-title">DATABASE STATUS</p>
-        <div class="stat-grid">
-          <div><strong>6</strong><span>登録ドラゴン</span></div>
-          <div><strong>10</strong><span>実測データ</span></div>
-          <div><strong>3</strong><span>等級検体</span></div>
-          <div class="visitor-stat">
-            <img src="https://api.visitorbadge.io/api/VisitorHit?user=hiyu3341-debug&repo=dv3-f2p-lab&label=%E7%B4%AF%E8%A8%88%E8%A8%AA%E5%95%8F&labelColor=%23101f33&countColor=%234de2d0" alt="累計訪問者カウンター">
-            <span>ページ閲覧回数の目安</span>
-          </div>
-        </div>
-        <p class="last-update">最終更新：2026-07-22</p>
-      </aside>
-    </div>
-  </section>
-
-  <section class="section latest-update-section">
-    <div class="latest-update-card">
-      <div class="latest-icon">NEW</div>
-      <div>
-        <p class="eyebrow">LATEST UPDATE</p>
-        <h2>最新更新情報</h2>
-        <div class="latest-meta"><time datetime="2026-07-22">2026年7月22日</time><span class="version-chip">Ver.3.1</span></div>
-        <h3>ゼフィロス個別ページ公開</h3>
-        <ul>
-          <li>成体サムネイル付きの個別研究ページを追加</li>
-          <li>★1・★5実測値と無課金育成データを掲載</li>
-          <li>孵化時間と★5までの理論時間を追加</li>
-        </ul>
-        <a class="latest-link" href="updates.html">更新履歴を見る →</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-head"><div><p class="eyebrow">SITE MENU</p><h2>メニュー</h2></div><p>調べたい内容を選んでください。</p></div>
-    <div class="menu-card-grid">
-      <a class="menu-card" href="ranking.html"><span>01</span><h3>無課金ランキング</h3><p>育成難易度を含めた暫定評価。</p></a>
-      <a class="menu-card" href="dragons.html"><span>02</span><h3>ドラゴン図鑑</h3><p>名前・レア度・役割で検索。</p></a>
-      <a class="menu-card" href="grade.html"><span>03</span><h3>等級解析</h3><p>個別等級と能力値の関係を検証。</p></a>
-      <a class="menu-card" href="tools.html"><span>04</span><h3>計算ツール</h3><p>ガチャ天井・星上げ参考計算。</p></a>
-      <a class="menu-card" href="about.html"><span>05</span><h3>Project Dについて</h3><p>評価基準と情報区分を掲載。</p></a>
-      <a class="menu-card" href="updates.html"><span>06</span><h3>更新履歴</h3><p>サイトの変更内容を確認。</p></a>
-    </div>
-  </section>
+</div>
+<aside class="dashboard">
+<div class="scanline"></div>
+<p class="dashboard-title">DATABASE STATUS</p>
+<div class="stat-grid">
+<div><strong>6</strong><span>登録ドラゴン</span></div>
+<div><strong>10</strong><span>実測データ</span></div>
+<div><strong>3</strong><span>等級検体</span></div>
+<div class="visitor-stat">
+<img alt="累計訪問者カウンター" src="https://api.visitorbadge.io/api/VisitorHit?user=hiyu3341-debug&amp;repo=dv3-f2p-lab&amp;label=%E7%B4%AF%E8%A8%88%E8%A8%AA%E5%95%8F&amp;labelColor=%23101f33&amp;countColor=%234de2d0"/>
+<span>ページ閲覧回数の目安</span>
+</div>
+</div>
+<p class="last-update">最終更新：2026-07-23</p>
+</aside>
+</div>
+</section>
+<section class="section latest-update-section">
+<div class="latest-update-card">
+<div class="latest-icon">NEW</div>
+<div>
+<p class="eyebrow">LATEST UPDATE</p>
+<h2>最新更新情報</h2>
+<div class="latest-meta"><time datetime="2026-07-23">2026年7月23日</time><span class="version-chip">Ver.4.0</span></div>
+<h3>検索エンジン対応・図鑑SEO強化</h3>
+<ul>
+<li>成体サムネイル付きの個別研究ページを追加</li>
+<li>★1・★5実測値と無課金育成データを掲載</li>
+<li>孵化時間と★5までの理論時間を追加</li>
+</ul>
+<a class="latest-link" href="updates.html">更新履歴を見る →</a>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-head"><div><p class="eyebrow">SITE MENU</p><h2>メニュー</h2></div><p>調べたい内容を選んでください。</p></div>
+<div class="menu-card-grid">
+<a class="menu-card" href="ranking.html"><span>01</span><h3>無課金ランキング</h3><p>育成難易度を含めた暫定評価。</p></a>
+<a class="menu-card" href="dragons.html"><span>02</span><h3>ドラゴン図鑑</h3><p>名前・レア度・役割で検索。</p></a>
+<a class="menu-card" href="grade.html"><span>03</span><h3>等級解析</h3><p>個別等級と能力値の関係を検証。</p></a>
+<a class="menu-card" href="tools.html"><span>04</span><h3>計算ツール</h3><p>ガチャ天井・星上げ参考計算。</p></a>
+<a class="menu-card" href="about.html"><span>05</span><h3>Project Dについて</h3><p>評価基準と情報区分を掲載。</p></a>
+<a class="menu-card" href="updates.html"><span>06</span><h3>更新履歴</h3><p>サイトの変更内容を確認。</p></a>
+</div>
+</section>
 </main>
 <footer>
-  <div><strong>PROJECT D</strong><span>ドラゴンビレッジ3 無課金攻略研究所</span></div>
-  <p>非公式・プレイヤー独自検証サイト。ゲーム内仕様は更新により変更される場合があります。</p>
+<div><strong>PROJECT D</strong><span>ドラゴンビレッジ3 無課金攻略研究所</span></div>
+<p>非公式・プレイヤー独自検証サイト。ゲーム内仕様は更新により変更される場合があります。</p>
 </footer>
 <script src="script.js"></script>
 </body>
