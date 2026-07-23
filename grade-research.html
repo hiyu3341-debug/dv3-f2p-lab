@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="ドラゴンビレッジ3の等級補正を、ウィンド・ファイヤー・アクア・ヘイズの図鑑基礎値と実測値から検証するPROJECT D研究ページ。" name="description"/>
+<meta content="ドラゴンビレッジ3の等級補正を、ウィンド・ファイヤー・アクア・ヘイズ・氷河古龍の図鑑基礎値と実測値から等級補正を検証するPROJECT D研究ページ。" name="description"/>
 <meta content="#07111f" name="theme-color"/>
 <title>等級補正の仕組みを実測検証｜PROJECT D研究室</title>
 <link href="favicon.png" rel="icon" type="image/png"/>
@@ -13,7 +13,7 @@
 <meta content="article" property="og:type"/>
 <meta content="PROJECT D｜ドラゴンビレッジ3 無課金攻略研究所" property="og:site_name"/>
 <meta content="等級補正の仕組みを実測検証｜PROJECT D研究室" property="og:title"/>
-<meta content="ウィンド・ファイヤー・アクア・ヘイズの図鑑基礎値と実測値から、等級補正の計算方法を検証。" property="og:description"/>
+<meta content="低レアの連続測定、エピックのヘイズ、レジェンドの氷河古龍を比較し、等級補正の計算方法を検証。" property="og:description"/>
 <meta content="https://hiyu3341-debug.github.io/dv3-f2p-lab/grade-research.html" property="og:url"/>
 <meta content="https://hiyu3341-debug.github.io/dv3-f2p-lab/grade_bonus_graph.png" property="og:image"/>
 <meta content="PROJECT D 等級補正実測グラフ" property="og:image:alt"/>
@@ -93,6 +93,19 @@
 </div>
 </section>
 
+
+<section class="section dark-panel">
+<div class="section-head"><div><p class="eyebrow">RARITY COMPARISON</p><h2>ヘイズと氷河古龍の比較</h2></div><p>エピックとレジェンドで、同じ個別等級の補正傾向を比較。</p></div>
+<div class="detail-grid">
+<article class="detail-card"><p class="eyebrow">EPIC / Lv.30</p><h2>ヘイズ</h2><ul class="research-points"><li>等級2：3能力すべて +48</li><li>等級3：速度 +56</li><li>等級5：防御 +80</li><li>等級6：攻撃 +100</li></ul></article>
+<article class="detail-card"><p class="eyebrow">LEGEND / Lv.35</p><h2>氷河古龍</h2><ul class="research-points"><li>等級3：攻撃・防御ともに +59</li><li>等級4：抵抗 +72</li><li>等級5：体力・魔力・速度すべて +85</li></ul></article>
+</div>
+<div class="data-table-wrap"><table class="research-table"><thead><tr><th>ドラゴン</th><th>レアリティ</th><th>Lv.</th><th>同一等級で確認できた一致</th></tr></thead><tbody><tr><td>ヘイズ</td><td>エピック</td><td>30</td><td>等級2の3能力がすべて +48</td></tr><tr><td>氷河古龍</td><td>レジェンド</td><td>35</td><td>等級3の2能力が +59、等級5の3能力が +85</td></tr></tbody></table></div>
+<div class="notice confirmed-box"><span>共通して確認</span>同一個体内では、能力の図鑑値が異なっていても、同じ個別等級なら上昇量が一致しました。</div>
+<div class="notice hypothesis-box"><span>まだ断定できない点</span>ヘイズの等級5は +80、氷河古龍の等級5は +85です。レベル差・進化条件・レアリティのどれが差を生むかは未確定です。</div>
+<p class="note">レジェンドは継続的な収集が難しいため、氷河古龍は参考サンプルとして保存し、今後の主検証は同条件を揃えやすいエピックを優先します。</p>
+</section>
+
 <section class="section dark-panel">
 <div class="section-head"><div><p class="eyebrow">CURRENT HYPOTHESIS</p><h2>現時点の整理</h2></div><p>確定事項ではなく、次の検証を組み立てるための作業仮説。</p></div>
 <div class="research-formula"><span>実能力値</span><b>≒</b><span>図鑑基礎値</span><b>×</b><span>等級に応じた倍率</span><b>＋</b><span>丸め処理</span></div>
@@ -101,11 +114,11 @@
 
 <section class="section">
 <div class="section-head"><div><p class="eyebrow">NEXT STEPS</p><h2>今後の課題</h2></div></div>
-<div class="about-grid"><div class="glass-card"><h3>同一個体の連続記録</h3><p>同レベルの進化前後、同段階のレベル違いを測り、進化とレベルの影響を分離。</p></div><div class="glass-card"><h3>レアリティ比較</h3><p>レア・エピック・レジェンドで同条件を増やし、共通倍率か個別テーブルかを検証。</p></div><div class="glass-card"><h3>丸め処理の特定</h3><p>予測値と実測値の誤差を比較し、切り捨て・四捨五入・段階別処理を検証。</p></div></div>
+<div class="about-grid"><div class="glass-card"><h3>同一個体の連続記録</h3><p>同レベルの進化前後、同段階のレベル違いを測り、進化とレベルの影響を分離。</p></div><div class="glass-card"><h3>エピックを重点収集</h3><p>まずは成体Lv.30前後のエピックを増やし、個別等級1〜6の補正値を複数個体で確認。レジェンドは参考値として保存します。</p></div><div class="glass-card"><h3>丸め処理の特定</h3><p>予測値と実測値の誤差を比較し、切り捨て・四捨五入・段階別処理を検証。</p></div></div>
 <div class="notice hypothesis-box"><span>研究継続中</span>PROJECT Dでは、実測データが増えるたびに本ページを更新します。</div>
 <a class="back-link" href="grade.html">← 等級解析ページへ戻る</a>
 </section>
 </main>
 <footer><div><strong>PROJECT D</strong><span>ドラゴンビレッジ3 無課金攻略研究所</span></div><p>非公式・プレイヤー独自検証サイト。ゲーム内仕様は更新により変更される場合があります。</p></footer>
-<script src="script.js?v=4.6"></script>
+<script src="script.js?v=4.7"></script>
 </body></html>
