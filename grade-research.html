@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="ドラゴンビレッジ3の等級補正を、ウィンド・ファイヤー・アクア・ヘイズの図鑑基礎値と実測値から検証するPROJECT D研究ページ。" name="description"/>
+<meta content="#07111f" name="theme-color"/>
+<title>等級補正の仕組みを実測検証｜PROJECT D研究室</title>
+<link href="favicon.png" rel="icon" type="image/png"/>
+<link href="styles.css" rel="stylesheet"/>
+<link href="https://hiyu3341-debug.github.io/dv3-f2p-lab/grade-research.html" rel="canonical"/>
+<meta content="ja_JP" property="og:locale"/>
+<meta content="article" property="og:type"/>
+<meta content="PROJECT D｜ドラゴンビレッジ3 無課金攻略研究所" property="og:site_name"/>
+<meta content="等級補正の仕組みを実測検証｜PROJECT D研究室" property="og:title"/>
+<meta content="ウィンド・ファイヤー・アクア・ヘイズの図鑑基礎値と実測値から、等級補正の計算方法を検証。" property="og:description"/>
+<meta content="https://hiyu3341-debug.github.io/dv3-f2p-lab/grade-research.html" property="og:url"/>
+<meta content="https://hiyu3341-debug.github.io/dv3-f2p-lab/grade_bonus_graph.png" property="og:image"/>
+<meta content="PROJECT D 等級補正実測グラフ" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+</head>
+<body>
+<header class="topbar">
+<a aria-label="ホームへ" class="brand" href="index.html"><img alt="Project D ロゴ" class="brand-logo" src="project_d_logo.jpg"/><span><strong>PROJECT D</strong><small>ドラゴンビレッジ3 無課金攻略研究所</small></span></a>
+<button aria-label="メニューを開く" class="menu-button" id="menuButton">☰</button>
+<nav id="mainNav"><a href="index.html">ホーム</a><a href="ranking.html">ランキング</a><a href="dragons.html">ドラゴン図鑑</a><a href="grade.html">等級解析</a><a href="grade-research.html">研究室</a><a href="tools.html">計算ツール</a><a href="about.html">Project Dについて</a><a href="updates.html">更新履歴</a></nav>
+</header>
+<main class="subpage">
+<nav aria-label="パンくずリスト" class="breadcrumb"><a href="index.html">ホーム</a><span>›</span><a href="grade.html">等級解析</a><span>›</span><span aria-current="page">等級補正研究</span></nav>
+<section class="page-hero research-hero"><p class="eyebrow">PROJECT D LAB / WORK IN PROGRESS</p><h1>等級補正は<br/><span>どう決まるのか？</span></h1><p>図鑑に表示される基礎能力値と、装備なし・平凡な性格の育成個体を比較し、等級補正の仕組みを実測から検証します。</p><div class="research-status"><span class="status hypothesis-label">検証中</span><span>掲載データは暫定結果です。仕様変更や追加検証により修正する場合があります。</span></div></section>
+
+<section class="section detail-section">
+<div class="section-head"><div><p class="eyebrow">METHOD</p><h2>検証方法</h2></div><p>同一レベル・同一進化段階の図鑑値と実測値を能力ごとに比較。</p></div>
+<div class="policy-grid research-method-grid">
+<div class="glass-card"><b>01</b><h3>図鑑値を記録</h3><p>レベルと進化段階を実個体に合わせ、6能力の基礎値を確認。</p></div>
+<div class="glass-card"><b>02</b><h3>等級を記録</h3><p>体力・攻撃・防御・魔力・抵抗・速度の個別等級を確認。</p></div>
+<div class="glass-card"><b>03</b><h3>実測値を記録</h3><p>性格「平凡」、装備・オーラなしの状態で能力値を確認。</p></div>
+<div class="glass-card"><b>04</b><h3>差と倍率を比較</h3><p>実測値−図鑑値、実測値÷図鑑値の両方から仮説を評価。</p></div>
+</div>
+<div class="notice hypothesis-box"><span>注意</span>総等級は6項目の平均表示です。本検証では各能力の個別等級を使用しています。</div>
+</section>
+
+<section class="section dark-panel">
+<div class="section-head"><div><p class="eyebrow">FIRST OBSERVATION</p><h2>Lv.1低レア3種の実測</h2></div><p>ウィンド・ファイヤー・アクアを各5体、合計15体で比較。</p></div>
+<figure class="research-chart"><img src="grade_bonus_graph.png" alt="ウィンド、ファイヤー、アクアの個別等級と図鑑値からの上昇量を示した散布図と暫定折れ線"/><figcaption>横軸：個別等級／縦軸：図鑑基礎値からの上昇量。点は実測、線は暫定代表値。</figcaption></figure>
+<div class="data-table-wrap"><table class="research-table"><thead><tr><th>個別等級</th><th>観測された上昇量</th><th>暫定代表値</th><th>状況</th></tr></thead><tbody>
+<tr><td>1</td><td>+20〜+23</td><td>約+20</td><td>複数種で確認</td></tr>
+<tr><td>2</td><td>+24〜+27</td><td>約+25</td><td>複数種で確認</td></tr>
+<tr><td>3</td><td>+28〜+31</td><td>約+28〜29</td><td>複数種で確認</td></tr>
+<tr><td>4</td><td>+34〜+36</td><td>約+35</td><td>複数種で確認</td></tr>
+<tr><td>5</td><td>+40〜+41</td><td>約+40</td><td>複数種で確認</td></tr>
+<tr><td>6</td><td>+50〜+51</td><td>約+50</td><td>ファイヤー・アクアで確認</td></tr>
+</tbody></table></div>
+<div class="notice confirmed-box"><span>観測</span>Lv.1の範囲では、ドラゴン種や能力項目が違っても、同じ等級の上昇量は近い帯に集まりました。ただし完全な比例直線ではありません。</div>
+</section>
+
+<section class="section">
+<div class="section-head"><div><p class="eyebrow">SPECIES DATA</p><h2>ドラゴン別の検証概要</h2></div><p>最初の仮説形成に使用した3種類。</p></div>
+<div class="detail-grid">
+<article class="detail-card"><p class="eyebrow">WIND DRAGON</p><h2>ウィンドドラゴン</h2><p>Lv.1の5体を測定。同じ個別等級では同じ能力値になる例が複数確認され、6能力が個別に補正される仮説を強めました。</p><ul class="research-points"><li>体力等級5：2体とも386</li><li>攻撃等級2：2体とも380</li><li>抵抗等級2：3体とも364</li></ul></article>
+<article class="detail-card"><p class="eyebrow">FIRE DRAGON</p><h2>ファイヤードラゴン</h2><p>Lv.1の5体を測定。ウィンドと基礎値が異なるにもかかわらず、等級別の上昇量は近い範囲に集まりました。</p><ul class="research-points"><li>防御：等級1〜4を連続確認</li><li>魔力：等級3〜6を確認</li><li>速度：等級1・2・3・5を確認</li></ul></article>
+<article class="detail-card"><p class="eyebrow">AQUA DRAGON</p><h2>アクアドラゴン</h2><p>Lv.1の5体を測定。ファイヤーと同様の補正帯を確認し、低レアのLv.1では共通の補正テーブルが存在する可能性が高まりました。</p><ul class="research-points"><li>等級1：+20</li><li>等級3：+28</li><li>等級4：+34〜35</li><li>等級5：+40〜41</li><li>等級6：+50〜51</li></ul></article>
+</div>
+</section>
+
+<section class="section dark-panel">
+<div class="section-head"><div><p class="eyebrow">SAME INDIVIDUAL TRACKING</p><h2>同一アクア個体の成長追跡</h2></div><p>総等級4.0の同じ個体を進化・育成し、補正量の変化を確認。</p></div>
+<div class="data-table-wrap"><table class="research-table"><thead><tr><th>段階</th><th>例：図鑑HP</th><th>実測HP</th><th>差</th><th>実測÷図鑑</th></tr></thead><tbody>
+<tr><td>ハッチ Lv.5</td><td>382</td><td>419</td><td>+37</td><td>約1.097</td></tr>
+<tr><td>ハッチリング Lv.5</td><td>424</td><td>465</td><td>+41</td><td>約1.097</td></tr>
+<tr><td>ハッチリング Lv.15</td><td>491</td><td>541</td><td>+50</td><td>約1.102</td></tr>
+<tr><td>成体 Lv.15</td><td>541</td><td>596</td><td>+55</td><td>約1.102</td></tr>
+</tbody></table></div>
+<div class="research-conclusion-grid">
+<div class="notice confirmed-box"><span>否定が強まった仮説</span>等級ごとに常に同じ数値を足す「固定加算」だけでは、成長後の差を説明できません。</div>
+<div class="notice hypothesis-box"><span>有力な仮説</span>基礎能力値に対する割合補正を行い、最後に整数への丸め処理が入る可能性があります。</div>
+</div>
+<p class="note">同じ個体でもレベルと進化段階が同時に変化している区間があるため、「レベル」と「進化段階」の影響はまだ完全には分離できていません。</p>
+</section>
+
+<section class="section">
+<div class="section-head"><div><p class="eyebrow">PENDING CASE</p><h2>未検証データ：ヘイズ（エピック）</h2></div><p>低レアと異なるレアリティで得られた参考データ。</p></div>
+<div class="detail-card accent-card">
+<div class="data-table-wrap"><table class="research-table"><thead><tr><th>能力</th><th>図鑑値（Lv.30）</th><th>個別等級</th><th>実測値</th><th>差</th></tr></thead><tbody>
+<tr><td>体力</td><td>594</td><td>2</td><td>642</td><td>+48</td></tr>
+<tr><td>攻撃</td><td>626</td><td>6</td><td>726</td><td>+100</td></tr>
+<tr><td>防御</td><td>594</td><td>5</td><td>674</td><td>+80</td></tr>
+<tr><td>魔力</td><td>1,062</td><td>2</td><td>1,110</td><td>+48</td></tr>
+<tr><td>抵抗</td><td>694</td><td>2</td><td>742</td><td>+48</td></tr>
+<tr><td>速度</td><td>926</td><td>3</td><td>982</td><td>+56</td></tr>
+</tbody></table></div>
+<div class="notice hypothesis-box"><span>未検証</span>Lv.30・エピックではLv.1低レアより差が大きくなりました。ただし、レベル・進化段階・レアリティのどれが原因かは、この1体だけでは判断できません。</div>
+</div>
+</section>
+
+<section class="section dark-panel">
+<div class="section-head"><div><p class="eyebrow">CURRENT HYPOTHESIS</p><h2>現時点の整理</h2></div><p>確定事項ではなく、次の検証を組み立てるための作業仮説。</p></div>
+<div class="research-formula"><span>実能力値</span><b>≒</b><span>図鑑基礎値</span><b>×</b><span>等級に応じた倍率</span><b>＋</b><span>丸め処理</span></div>
+<ul class="research-checklist"><li><strong>支持されている：</strong>各能力は個別等級に応じて独立に補正される。</li><li><strong>支持されている：</strong>固定加算だけでは成長後の値を説明できない。</li><li><strong>有力：</strong>基礎値に対する割合補正が含まれる。</li><li><strong>未確定：</strong>倍率がレベル・進化段階・レアリティで変わるか。</li><li><strong>未確定：</strong>正確な丸め方法（切り捨て・四捨五入など）。</li></ul>
+</section>
+
+<section class="section">
+<div class="section-head"><div><p class="eyebrow">NEXT STEPS</p><h2>今後の課題</h2></div></div>
+<div class="about-grid"><div class="glass-card"><h3>同一個体の連続記録</h3><p>同レベルの進化前後、同段階のレベル違いを測り、進化とレベルの影響を分離。</p></div><div class="glass-card"><h3>レアリティ比較</h3><p>レア・エピック・レジェンドで同条件を増やし、共通倍率か個別テーブルかを検証。</p></div><div class="glass-card"><h3>丸め処理の特定</h3><p>予測値と実測値の誤差を比較し、切り捨て・四捨五入・段階別処理を検証。</p></div></div>
+<div class="notice hypothesis-box"><span>研究継続中</span>PROJECT Dでは、実測データが増えるたびに本ページを更新します。</div>
+<a class="back-link" href="grade.html">← 等級解析ページへ戻る</a>
+</section>
+</main>
+<footer><div><strong>PROJECT D</strong><span>ドラゴンビレッジ3 無課金攻略研究所</span></div><p>非公式・プレイヤー独自検証サイト。ゲーム内仕様は更新により変更される場合があります。</p></footer>
+<script src="script.js?v=4.6"></script>
+</body></html>
