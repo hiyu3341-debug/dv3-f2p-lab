@@ -269,3 +269,28 @@ footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;paddin
   background:#f8f0df;
 }
 
+
+
+/* Ver.5.0 beta3: compact dragon image on individual pages */
+.dragon-portrait-wrap{
+  background:#f8f0df;
+}
+.dragon-portrait{
+  aspect-ratio:1 / 1;
+  object-fit:cover;
+  object-position:center 22%;
+  background:#f8f0df;
+}
+.dragon-portrait.dragon-portrait--thumb{
+  object-fit:contain;
+  object-position:center;
+  padding:10px;
+}
+@media(max-width:800px){
+  .dragon-portrait-wrap{
+    width:min(100%,300px);
+  }
+  .dragon-portrait.dragon-portrait--thumb{
+    max-height:300px;
+  }
+}
