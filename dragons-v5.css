@@ -29,3 +29,7 @@
 .v5-badge.rarity-legendary{background:rgba(239,176,54,.18);color:#ffd27a;border:1px solid rgba(239,176,54,.25)}
 .v5-badge.rarity-epic{background:#342a68;color:#c8adff}.v5-badge.rarity-rare{background:rgba(63,149,222,.18);color:#8fcaff;border:1px solid rgba(63,149,222,.22)}
 @media(max-width:520px){.v5-counts{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.v5-counts>div{padding:10px 4px}.v5-counts span{font-size:.62rem}.v5-counts strong{font-size:1.35rem}}
+
+/* Ver.5.0 RC4 score and rank */
+.v5-score-line{display:flex;gap:8px;margin-top:8px}.v5-score-line>span{display:flex;align-items:baseline;gap:5px;padding:5px 8px;border:1px solid #28506c;border-radius:9px;background:#091a2b}.v5-score-line small{color:#8fa6bd;font-size:.62rem}.v5-score-line strong{color:#6ce9df;font-size:.88rem}.v5-score-line>span:last-child strong{color:#ffd27a}
+@media(max-width:430px){.v5-score-line{gap:5px}.v5-score-line>span{padding:4px 6px}.v5-score-line small{font-size:.57rem}.v5-score-line strong{font-size:.8rem}}
