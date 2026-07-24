@@ -24,7 +24,7 @@ if (grid) {
     );
     grid.innerHTML = filtered.map(d => `
       <a class="dragon-card dragon-card-link" href="${d.url || '#'}">
-        ${d.image ? `<img src="${d.image}" alt="${d.name}" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;margin-bottom:12px;background:#f8f0df">` : ""}
+        ${d.image ? `<div class="dragon-card-image-wrap"><img class="dragon-card-image" src="${d.image}" alt="${d.name}" loading="lazy"></div>` : ""}
         <div class="title-row"><h3>${d.name}</h3><span class="pill ${d.rarity.toLowerCase()}">${d.rarity}</span><span class="status ${d.grade === "confirmed" ? "confirmed-label" : "pending-label"}">${d.grade === "confirmed" ? "実測" : "検証中"}</span></div>
         <p><strong>${d.ability}</strong>｜${d.effect}</p>
         <div class="stats">

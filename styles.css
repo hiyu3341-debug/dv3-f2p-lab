@@ -250,3 +250,22 @@ footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;paddin
 @media(max-width:800px){.research-conclusion-grid{grid-template-columns:1fr}.research-method-grid .glass-card{min-height:auto}.research-formula{justify-content:flex-start}}
 
 /* Ver.4.7: keep the three encyclopedia growth images horizontal on smartphones */
+
+/* Ver.4.15k: dragon encyclopedia card image alignment fix */
+.dragon-card-image-wrap{
+  width:100%;
+  margin-bottom:12px;
+  overflow:hidden;
+  border-radius:10px;
+  background:#f8f0df;
+  border:1px solid rgba(255,255,255,.06);
+}
+.dragon-card-image{
+  display:block;
+  width:100%;
+  height:auto;
+  object-fit:contain;
+  object-position:center;
+  background:#f8f0df;
+}
+
