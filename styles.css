@@ -269,30 +269,3 @@ footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;paddin
   background:#f8f0df;
 }
 
-
-
-/* Ver.5.0 compact responsive dragon catalog */
-.dragon-catalog-page{background:radial-gradient(circle at 88% 8%,rgba(79,140,255,.12),transparent 26%),var(--bg)}
-.dragon-catalog-hero{max-width:1180px;margin:0 auto;padding:48px 18px 26px;display:grid;grid-template-columns:1fr auto;gap:28px;align-items:end}
-.dragon-catalog-hero h1{font-size:clamp(2rem,6vw,3.8rem);margin:.1em 0}.dragon-catalog-hero p:last-child{color:var(--muted);margin:0;max-width:700px}
-.catalog-summary{display:grid;grid-template-columns:repeat(2,190px);gap:12px}.catalog-summary article{padding:15px 18px;border:1px solid var(--line);border-radius:13px;background:linear-gradient(160deg,rgba(18,36,58,.98),rgba(11,26,43,.98));text-align:center}.catalog-summary span{display:block;color:var(--muted);font-size:.78rem}.catalog-summary strong{font-size:2rem;line-height:1.15}.catalog-summary small{font-size:.8rem;margin-left:3px;color:var(--muted)}
-.dragon-catalog-section{padding-top:8px;max-width:1180px}
-.catalog-filter-panel{padding:16px;border:1px solid var(--line);border-radius:15px;background:rgba(13,26,43,.92);margin-bottom:12px}.catalog-filter-panel label>span{display:block;color:var(--muted);font-size:.76rem;margin:0 0 5px}.catalog-filter-panel input,.catalog-filter-panel select{width:100%;background:#091727;border:1px solid #29445f;color:white;border-radius:9px;padding:10px 12px}.catalog-search{display:block;margin-bottom:11px}.catalog-filter-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.catalog-reset{width:100%;margin-top:10px;padding:9px;border:1px solid #29445f;border-radius:9px;background:transparent;color:#d9e7f7;font-weight:800;cursor:pointer}
-.dragon-list{display:grid;gap:8px}.dragon-list-card{position:relative;display:grid;grid-template-columns:112px minmax(0,1fr) 24px;gap:14px;align-items:center;min-height:132px;padding:10px 13px 10px 10px;border:1px solid var(--line);border-radius:13px;background:linear-gradient(160deg,rgba(18,36,58,.97),rgba(10,24,40,.97));transition:border-color .2s,transform .2s;box-shadow:0 8px 20px rgba(0,0,0,.12)}.dragon-list-card:hover{border-color:var(--cyan);transform:translateY(-1px)}
-.dragon-list-image-wrap{position:relative;width:112px;height:112px;border-radius:11px;overflow:hidden;background:#f8f0df}.dragon-list-image{display:block;width:100%;height:100%;object-fit:contain}.dragon-stage{position:absolute;left:0;right:0;bottom:0;padding:2px 4px;background:rgba(8,18,30,.78);color:#c9d6e6;text-align:center;font-size:.62rem}
-.dragon-list-info{min-width:0}.dragon-list-title{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.dragon-list-title h3{margin:0;font-size:1.15rem;line-height:1.35}.dragon-ability{display:flex;gap:8px;align-items:center;margin:4px 0 0;color:#d7e3f2;font-size:.85rem}.dragon-ability span{color:var(--muted);padding-right:8px;border-right:1px solid var(--line)}.dragon-effect{margin:1px 0 7px;color:var(--muted);font-size:.78rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.dragon-inline-stats{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:5px;margin:0;padding-top:6px;border-top:1px solid var(--line)}.dragon-inline-stats div{min-width:0}.dragon-inline-stats dt{color:var(--muted);font-size:.65rem;line-height:1.1}.dragon-inline-stats dd{margin:2px 0 0;color:white;font-size:.91rem;font-weight:900;line-height:1.15}.dragon-list-arrow{font-size:2rem;color:#eaf2ff;line-height:1}.dragon-image-placeholder{display:grid;place-items:center;height:100%;color:#8b7e6e;font-size:.65rem;font-weight:900}
-.catalog-pagination{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;margin-top:16px;color:var(--muted);font-size:.8rem}.catalog-pagination>label{justify-self:end;display:flex;align-items:center;gap:7px}.catalog-pagination select{background:var(--panel);border:1px solid var(--line);color:white;border-radius:8px;padding:7px}.pagination-buttons{display:flex;align-items:center;gap:5px}.pagination-buttons button{min-width:34px;height:34px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:white;cursor:pointer}.pagination-buttons button:disabled{opacity:.35}.page-number.active{background:var(--cyan);color:#06111c;border-color:var(--cyan)}#pageNumbers{display:flex;gap:5px}
-@media(max-width:800px){
- .dragon-catalog-hero{grid-template-columns:1fr;padding-top:28px;gap:16px}.catalog-summary{grid-template-columns:repeat(2,1fr)}
- .dragon-catalog-section{padding-left:12px;padding-right:12px}.dragon-list-card{grid-template-columns:100px minmax(0,1fr) 18px;gap:10px;min-height:122px}.dragon-list-image-wrap{width:100px;height:100px}.dragon-list-title h3{font-size:1.05rem}.dragon-inline-stats dd{font-size:.84rem}
-}
-@media(max-width:560px){
- .dragon-catalog-hero{padding:22px 12px 14px}.dragon-catalog-hero h1{font-size:2rem}.catalog-summary article{padding:10px}.catalog-summary strong{font-size:1.65rem}.dragon-catalog-section{padding-top:4px;padding-bottom:34px}
- .catalog-filter-panel{padding:11px}.catalog-filter-grid{grid-template-columns:repeat(2,1fr)}.catalog-filter-grid label:last-child{grid-column:1/-1}
- .dragon-list-card{grid-template-columns:86px minmax(0,1fr) 14px;gap:9px;min-height:112px;padding:8px}.dragon-list-image-wrap{width:86px;height:96px}.dragon-stage{font-size:.55rem}
- .dragon-list-title{gap:5px}.dragon-list-title h3{font-size:.98rem}.pill,.status{font-size:.59rem;padding:2px 6px}.dragon-ability{font-size:.73rem;margin-top:2px}.dragon-effect{font-size:.68rem;margin-bottom:5px}
- .dragon-inline-stats{gap:2px}.dragon-inline-stats dt{font-size:.54rem}.dragon-inline-stats dd{font-size:.7rem}.dragon-list-arrow{font-size:1.5rem}
- .catalog-pagination{grid-template-columns:1fr;justify-items:center;text-align:center}.catalog-pagination>label{justify-self:center}
-}
-@media(max-width:390px){.dragon-list-card{grid-template-columns:78px minmax(0,1fr) 12px}.dragon-list-image-wrap{width:78px;height:90px}.dragon-list-title h3{width:100%;font-size:.94rem}.dragon-effect{max-width:210px}.dragon-inline-stats dd{font-size:.66rem}}
