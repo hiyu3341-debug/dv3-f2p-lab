@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#07111f">
 <link rel="icon" href="favicon.png" type="image/png">
-<link rel="stylesheet" href="styles.css?v=5.0rc2">
-<link rel="stylesheet" href="dragons-v5.css?v=5.0rc2">
-<meta name="description" content="PROJECT D ドラゴン図鑑 Ver.5.0 RC2。スマートフォン向けコンパクト一覧。">
-<title>ドラゴン図鑑 Ver.5.0 RC2｜PROJECT D</title>
+<link rel="stylesheet" href="styles.css?v=5.0b2">
+<link rel="stylesheet" href="dragons-v5.css?v=5.0rc3">
+<meta name="description" content="PROJECT D ドラゴン図鑑 Ver.5.0 β。スマートフォン向けコンパクト一覧。">
+<title>ドラゴン図鑑 Ver.5.0 β｜PROJECT D</title>
 </head>
 <body class="dragons-v5-page">
 <header class="topbar">
@@ -19,15 +19,16 @@
 <main class="v5-shell">
 <nav class="v5-breadcrumb"><a href="index.html">ホーム</a><span>›</span><span>ドラゴン図鑑</span></nav>
 <section class="v5-intro">
-<div><p class="v5-kicker">DRAGON DATABASE · Ver.5.0 RC2</p><h1>ドラゴン図鑑</h1><p>画像と主要情報を、スマートフォンで素早く確認できるコンパクト一覧です。</p></div>
-<div class="v5-counts"><div><span>登録ドラゴン数</span><strong id="registeredCount">0<small>体</small></strong></div><div><span>実測データ数</span><strong id="measuredCount">0<small>体</small></strong></div><div><span>画像準備済み</span><strong id="imageReadyCount">0<small>体</small></strong></div></div>
+<div><p class="v5-kicker">DRAGON DATABASE · Ver.5.0 β</p><h1>ドラゴン図鑑</h1><p>画像と主要情報を、スマートフォンで素早く確認できるコンパクト一覧です。</p></div>
+<div class="v5-counts"><div><span>登録ドラゴン数</span><strong id="registeredCount">0<small>体</small></strong></div><div><span>実測データ数</span><strong id="measuredCount">0<small>体</small></strong></div></div>
 </section>
 <section class="v5-controls" aria-label="検索と絞り込み">
-<label class="v5-search"><span class="sr-only">キーワード検索</span><input id="searchInput" type="search" placeholder="名前・アビリティ・効果で検索" autocomplete="off"></label>
+<label class="v5-search"><span class="sr-only">キーワード検索</span><input id="searchInput" type="search" placeholder="名前・属性・アビリティ・効果で検索" autocomplete="off"></label>
 <div class="v5-filter-grid">
 <label><span>レア度</span><select id="rarityFilter"><option value="all">すべて</option><option value="Epic">Epic</option><option value="Legendary">Legendary</option><option value="Rare">Rare</option></select></label>
 <label><span>役割</span><select id="roleFilter"><option value="all">すべて</option><option value="physical">物理</option><option value="magic">魔法</option><option value="defense">防御</option><option value="support">支援</option></select></label>
-<label><span>並び順</span><select id="sortFilter"><option value="registered">登録順</option><option value="name">名前順</option><option value="hp">HP順</option><option value="atk">攻撃順</option><option value="def">防御順</option><option value="mag">魔法順</option><option value="res">抵抗順</option><option value="spd">速度順</option><option value="total">総合値順</option></select></label>
+<label><span>属性</span><select id="attributeFilter"><option value="all">すべて</option></select></label>
+<label><span>並び順</span><select id="sortFilter"><option value="registered">登録順</option><option value="name">名前順</option><option value="hp">HP順</option><option value="atk">攻撃順</option><option value="def">防御順</option><option value="mag">魔法順</option><option value="res">抵抗順</option><option value="spd">速度順</option></select></label>
 </div>
 <button id="resetFilters" class="v5-reset" type="button">条件をリセット</button>
 </section>
@@ -37,7 +38,7 @@
 <nav id="pagination" class="v5-pagination" aria-label="ページ切り替え"></nav>
 </main>
 <footer><div><strong>PROJECT D</strong><span>ドラゴンビレッジ3 無課金攻略研究所</span></div><p>非公式・プレイヤー独自検証サイト。ゲーム内仕様は更新により変更される場合があります。</p></footer>
-<script src="dragons-data.js?v=5.0rc2"></script>
-<script src="dragons-v5.js?v=5.0rc2"></script>
+<script src="dragons-data.js?v=5.0rc3"></script>
+<script src="dragons-v5.js?v=5.0rc3"></script>
 </body>
 </html>
