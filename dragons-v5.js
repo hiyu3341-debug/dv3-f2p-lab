@@ -20,7 +20,7 @@ function filteredDragons(){
  return rows;
 }
 function card(d){const href=localUrl(d.url)||'#';return `<a class="v5-card" href="${escapeHTML(href)}" ${href==='#'?'aria-disabled="true"':''}>
- <div class="v5-thumb"><img src="${escapeHTML(d.thumb)}" alt="${escapeHTML(d.name)}" loading="lazy" decoding="async"></div>
+ <div class="v5-thumb"><img src="./${escapeHTML(d.thumb)}" alt="${escapeHTML(d.name)}" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('is-error')"></div>
  <div class="v5-card-main"><div class="v5-card-head"><h2>${escapeHTML(d.name)}</h2><span class="v5-badge rarity">${escapeHTML(d.rarity)}</span><span class="v5-badge measured">実測</span></div>
  <p class="v5-ability">${escapeHTML(roleNames[d.role]||d.role)} ｜ <strong>${escapeHTML(d.ability)}</strong></p><p class="v5-effect">${escapeHTML(d.effect)}</p>
  <div class="v5-stats"><div class="v5-stat"><span>HP</span><b>${d.hp}</b></div><div class="v5-stat"><span>攻撃</span><b>${d.atk}</b></div><div class="v5-stat"><span>防御</span><b>${d.def}</b></div><div class="v5-stat"><span>魔法</span><b>${d.mag}</b></div><div class="v5-stat"><span>抵抗</span><b>${d.res}</b></div><div class="v5-stat"><span>速度</span><b>${d.spd}</b></div></div><div class="v5-star">${escapeHTML(d.star)}</div></div><span class="v5-chevron" aria-hidden="true">›</span></a>`;}
