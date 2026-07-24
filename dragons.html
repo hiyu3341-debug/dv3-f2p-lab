@@ -1,5 +1,35 @@
-<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#07111f"><link rel="icon" href="favicon.png" type="image/png"><link rel="stylesheet" href="styles.css"><meta name="description" content="PROJECT Dドラゴン図鑑。画像確認済みの能力値・アビリティ・入手方法を掲載。"><title>ドラゴン図鑑｜PROJECT D</title></head><body><header class="topbar"><a class="brand" href="index.html"><img class="brand-logo" src="project_d_logo.jpg" alt="Project D ロゴ"><span><strong>PROJECT D</strong><small>ドラゴンビレッジ3 無課金攻略研究所</small></span></a><button class="menu-button" id="menuButton" aria-label="メニューを開く">☰</button><nav id="mainNav"><a href="index.html">ホーム</a><a href="ranking.html">ランキング</a><a href="dragons.html">ドラゴン図鑑</a><a href="grade.html">等級解析</a><a href="grade-research.html">研究室</a><a href="tools.html">計算ツール</a><a href="about.html">Project Dについて</a><a href="updates.html">更新履歴</a></nav></header>
-<main class="subpage"><nav class="breadcrumb"><a href="index.html">ホーム</a><span>›</span><span>ドラゴン図鑑</span></nav>
-<section class="page-hero"><p class="eyebrow">DRAGON DATABASE</p><h1>ドラゴン図鑑</h1><p>Ver.4.8bで新規11体の個別ページを追加しました。</p></section>
-<section class="section"><div class="menu-card-grid"><a class="menu-card" href="mushroom.html"><span>Epic</span><h3>マッシュルームドラゴン</h3><p>★5 Lv.50 合計 5,745<br>耐性（侵食状態にならない）</p></a><a class="menu-card" href="sloth.html"><span>Epic</span><h3>ナマケモノドラゴン</h3><p>★5 Lv.50 合計 6,017<br>天下泰平</p></a><a class="menu-card" href="blue-firetail.html"><span>Epic</span><h3>ブルーファイアーテイル</h3><p>★5 Lv.50 合計 6,016<br>急所回避</p></a><a class="menu-card" href="thunderbolt.html"><span>Epic</span><h3>サンダーボルトドラゴン</h3><p>★5 Lv.50 合計 5,745<br>電撃皮膚</p></a><a class="menu-card" href="henes.html"><span>Epic</span><h3>ヘネス</h3><p>★5 Lv.50 合計 6,018<br>借力</p></a><a class="menu-card" href="white-dragon.html"><span>Epic</span><h3>白龍</h3><p>★5 Lv.50 合計 6,833<br>柔軟な体（麻痺無効）</p></a><a class="menu-card" href="erebos.html"><span>Epic</span><h3>エレボス</h3><p>★5 Lv.50 合計 6,562<br>無効化のオーラ</p></a><a class="menu-card" href="norn.html"><span>Legendary</span><h3>ノーン</h3><p>★5 Lv.50 合計 7,482<br>不眠症</p></a><a class="menu-card" href="ancient-divine-dragon.html"><span>Legendary</span><h3>古代神龍</h3><p>★5 Lv.50 合計 7,769<br>無欠</p></a><a class="menu-card" href="darknix.html"><span>Legendary</span><h3>ダークニクス</h3><p>★5 Lv.50 合計 7,769<br>無欠</p></a><a class="menu-card" href="glacier-ancient-dragon.html"><span>Legendary</span><h3>氷河古龍</h3><p>★5 Lv.50 合計 7,485<br>深海の力（HP1/3以下で水属性スキル1.5倍）</p></a></div></section></main><footer><p>PROJECT D — ドラゴンビレッジ3 無課金攻略研究所</p></footer><script>const b=document.getElementById("menuButton"),n=document.getElementById("mainNav");if(b&&n)b.addEventListener("click",()=>n.classList.toggle("open"));</script></body></html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07111f">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="stylesheet" href="styles.css">
+<meta name="description" content="PROJECT Dドラゴン図鑑。登録ドラゴンを名前・レア度・役割で検索できます。">
+<title>ドラゴン図鑑｜PROJECT D</title>
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="index.html" aria-label="ホームへ"><img class="brand-logo" src="project_d_logo.jpg" alt="Project D ロゴ"><span><strong>PROJECT D</strong><small>ドラゴンビレッジ3 無課金攻略研究所</small></span></a>
+<button class="menu-button" id="menuButton" aria-label="メニューを開く">☰</button>
+<nav id="mainNav"><a href="index.html">ホーム</a><a href="ranking.html">ランキング</a><a href="dragons.html" aria-current="page">ドラゴン図鑑</a><a href="grade.html">等級解析</a><a href="grade-research.html">研究室</a><a href="tools.html">計算ツール</a><a href="about.html">Project Dについて</a><a href="updates.html">更新履歴</a></nav>
+</header>
+<main class="subpage">
+<nav class="breadcrumb"><a href="index.html">ホーム</a><span>›</span><span>ドラゴン図鑑</span></nav>
+<section class="page-hero"><p class="eyebrow">DRAGON DATABASE</p><h1>ドラゴン図鑑</h1><p>登録済みドラゴンを、名前・固有アビリティ・レア度・役割から検索できます。</p></section>
+<section class="section">
+<div class="section-head"><div><p class="eyebrow">SEARCH & FILTER</p><h2>ドラゴンを探す</h2></div><p>検索欄は名前・固有アビリティ・効果に対応しています。</p></div>
+<div class="filterbar">
+<label><span>キーワード検索</span><input id="searchInput" type="search" placeholder="例：玄武、台風、麻痺" autocomplete="off"></label>
+<label><span>レア度</span><select id="rarityFilter"><option value="all">すべて</option><option value="Epic">Epic</option><option value="Legendary">Legendary</option><option value="Rare">Rare</option></select></label>
+<label><span>役割</span><select id="roleFilter"><option value="all">すべて</option><option value="physical">物理</option><option value="magic">魔法</option><option value="defense">防御</option><option value="support">支援</option></select></label>
+</div>
+<div id="dragonGrid" class="dragon-grid" aria-live="polite"></div>
+<p id="noResults" class="no-results" hidden>条件に一致するドラゴンが見つかりませんでした。</p>
+</section>
+</main>
+<footer><div><strong>PROJECT D</strong><span>ドラゴンビレッジ3 無課金攻略研究所</span></div><p>非公式・プレイヤー独自検証サイト。ゲーム内仕様は更新により変更される場合があります。</p></footer>
+<script src="script.js?v=4.15g"></script>
+</body>
+</html>
