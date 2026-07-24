@@ -64,8 +64,8 @@
 <div class="scanline"></div>
 <p class="dashboard-title">DATABASE STATUS</p>
 <div class="stat-grid">
-<div><strong>27</strong><span>登録ドラゴン</span></div>
-<div><strong>28</strong><span>実測データ</span></div>
+<div><strong id="homeDragonCount">39</strong><span>登録ドラゴン</span></div>
+<div><strong id="homeMeasuredCount">39</strong><span>実測データ</span></div>
 <div><strong>15+</strong><span>等級検体</span></div>
 <div class="visitor-stat">
 <img alt="累計訪問者カウンター" src="https://api.visitorbadge.io/api/VisitorHit?user=hiyu3341-debug&amp;repo=dv3-f2p-lab&amp;label=%E7%B4%AF%E8%A8%88%E8%A8%AA%E5%95%8F&amp;labelColor=%23101f33&amp;countColor=%234de2d0"/>
@@ -99,6 +99,10 @@
 <div><strong>PROJECT D</strong><span>ドラゴンビレッジ3 無課金攻略研究所</span></div>
 <p>非公式・プレイヤー独自検証サイト。ゲーム内仕様は更新により変更される場合があります。</p>
 </footer>
-<script src="script.js?v=4.15j"></script>
+<script src="dragons-data.js?v=5.0g"></script>
+<script>
+(()=>{const d=window.PROJECT_D_DRAGONS||[];const c=document.getElementById("homeDragonCount");const m=document.getElementById("homeMeasuredCount");if(c)c.textContent=d.length;if(m)m.textContent=d.filter(x=>x.grade==="confirmed").length;})();
+</script>
+<script src="script.js?v=5.0g"></script>
 </body>
 </html>
