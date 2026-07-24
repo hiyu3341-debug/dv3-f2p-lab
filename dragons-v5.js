@@ -10,6 +10,7 @@ const sort=document.getElementById('sortFilter');
 const pageSize=document.getElementById('pageSize');
 const reset=document.getElementById('resetFilters');
 const noResults=document.getElementById('noResults');
+const pendingCount=document.getElementById('pendingCount');
 const pagination=document.getElementById('pagination');
 let page=1;
 const fmt=n=>Number(n||0).toLocaleString('ja-JP');
@@ -27,22 +28,29 @@ function filteredDragons(){
 function card(d){
  const href=localUrl(d.url)||'#';
  const thumb=d.thumb||'thumb-placeholder.png';
+ const fallback='thumb-placeholder.png';
  const rarityClass=`rarity-${String(d.rarity||'').toLowerCase()}`;
  return `<a class="v5-card" href="${escapeHTML(href)}" ${href==='#'?'aria-disabled="true"':''}>
- <div class="v5-thumb${thumb.includes('placeholder')?' is-placeholder':''}"><img src="./${escapeHTML(thumb)}" alt="${escapeHTML(d.name)}" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('is-error')"></div>
+ <div class="v5-thumb${thumb.includes('placeholder')?' is-placeholder':''}"><img src="./${escapeHTML(thumb)}" alt="${escapeHTML(d.name)}" loading="lazy" decoding="async" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='./${fallback}';this.parentElement.classList.add('is-placeholder')}else{this.parentElement.classList.add('is-error')}"></div>
  <div class="v5-card-main"><div class="v5-card-head"><h2>${escapeHTML(d.name)}</h2><span class="v5-badge rarity ${rarityClass}">${escapeHTML(d.rarity)}</span>${d.grade==='confirmed'?'<span class="v5-badge measured">実測</span>':''}</div>
  <p class="v5-ability">${escapeHTML(d.attribute)}属性 ｜ ${escapeHTML(roleNames[d.role]||d.role)} ｜ <strong>${escapeHTML(d.ability)}</strong></p><p class="v5-effect">${escapeHTML(d.effect)}</p>
  <div class="v5-score-line"><span><small>総合値</small><strong>${fmt(d.total)}</strong></span><span><small>総合順位</small><strong>${d.totalRank}位</strong></span></div>
  <div class="v5-stats"><div class="v5-stat"><span>HP</span><b>${fmt(d.hp)}</b></div><div class="v5-stat"><span>攻撃</span><b>${fmt(d.atk)}</b></div><div class="v5-stat"><span>防御</span><b>${fmt(d.def)}</b></div><div class="v5-stat"><span>魔法</span><b>${fmt(d.mag)}</b></div><div class="v5-stat"><span>抵抗</span><b>${fmt(d.res)}</b></div><div class="v5-stat"><span>速度</span><b>${fmt(d.spd)}</b></div></div><div class="v5-star">${escapeHTML(d.star)}</div></div><span class="v5-chevron" aria-hidden="true">›</span></a>`;
 }
 function button(text,target,disabled,label,current=false){return `<button class="v5-page-btn" data-page="${target}" ${disabled?'disabled':''} ${current?'aria-current="page"':''} aria-label="${label}">${text}</button>`;}
+function pageItems(current,total){
+ const values=total<=7?Array.from({length:total},(_,i)=>i+1):[1,current-1,current,current+1,total].filter(v=>v>=1&&v<=total);
+ const unique=[...new Set(values)].sort((a,b)=>a-b);const items=[];
+ unique.forEach((value,index)=>{if(index&&value-unique[index-1]>1)items.push('…');items.push(value);});return items;
+}
 function render(){
  const rows=filteredDragons();const size=Number(pageSize.value);const pages=Math.max(1,Math.ceil(rows.length/size));page=Math.min(page,pages);const shown=rows.slice((page-1)*size,page*size);
  list.innerHTML=shown.map(card).join('');noResults.hidden=rows.length!==0;
  document.getElementById('registeredCount').innerHTML=`${dragons.length}<small>体</small>`;
- document.getElementById('measuredCount').innerHTML=`${dragons.filter(d=>d.grade==='confirmed').length}<small>体</small>`;
+ document.getElementById('measuredCount').innerHTML=`${core?core.measuredCount():dragons.filter(d=>d.grade==='confirmed').length}<small>体</small>`;
+ if(pendingCount)pendingCount.innerHTML=`${core?core.pendingCount():0}<small>体</small>`;
  document.getElementById('resultSummary').textContent=rows.length?`${rows.length}体中 ${(page-1)*size+1}〜${Math.min(page*size,rows.length)}体を表示`:'0体';
- pagination.innerHTML=pages<=1?'':`${button('‹',page-1,page===1,'前へ')}${Array.from({length:pages},(_,i)=>button(i+1,i+1,false,`${i+1}ページ`,page===i+1)).join('')}${button('›',page+1,page===pages,'次へ')}`;
+ pagination.innerHTML=pages<=1?'':`${button('‹',page-1,page===1,'前へ')}${pageItems(page,pages).map(v=>v==='…'?'<span class="v5-page-ellipsis" aria-hidden="true">…</span>':button(v,v,false,`${v}ページ`,page===v)).join('')}${button('›',page+1,page===pages,'次へ')}`;
  pagination.querySelectorAll('button[data-page]').forEach(b=>b.addEventListener('click',()=>{page=Number(b.dataset.page);render();window.scrollTo({top:document.querySelector('.v5-result-line').offsetTop-90,behavior:'smooth'});}));
 }
 [search,rarity,role,attribute,sort,pageSize].forEach(el=>el.addEventListener(el===search?'input':'change',()=>{page=1;render();}));

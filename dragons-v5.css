@@ -33,3 +33,7 @@
 /* Ver.5.0 RC4 score and rank */
 .v5-score-line{display:flex;gap:8px;margin-top:8px}.v5-score-line>span{display:flex;align-items:baseline;gap:5px;padding:5px 8px;border:1px solid #28506c;border-radius:9px;background:#091a2b}.v5-score-line small{color:#8fa6bd;font-size:.62rem}.v5-score-line strong{color:#6ce9df;font-size:.88rem}.v5-score-line>span:last-child strong{color:#ffd27a}
 @media(max-width:430px){.v5-score-line{gap:5px}.v5-score-line>span{padding:4px 6px}.v5-score-line small{font-size:.57rem}.v5-score-line strong{font-size:.8rem}}
+
+/* Ver.5.0 RC5 final audit polish */
+.v5-pagination{align-items:center;flex-wrap:wrap}.v5-page-ellipsis{display:grid;place-items:center;min-width:24px;height:42px;color:#8296ad}.v5-thumb.is-placeholder img{object-fit:contain}.v5-counts{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:390px){.v5-page-btn{min-width:38px;height:40px}.v5-counts span{font-size:.58rem}.v5-counts strong{font-size:1.22rem}}
