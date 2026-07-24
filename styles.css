@@ -294,3 +294,8 @@ footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;paddin
     max-height:300px;
   }
 }
+
+/* Ver.5.0 RC1 shared detail presentation */
+.page-hero .detail-shared-thumb{float:left;width:96px;height:96px;object-fit:contain;margin:0 16px 8px 0;border-radius:14px;background:#081a2a;border:1px solid rgba(39,219,194,.25)}
+.data-audit-note{margin:20px auto;max-width:1100px}
+@media(max-width:640px){.page-hero .detail-shared-thumb{width:78px;height:78px;margin-right:12px}.page-hero{overflow:hidden}}
