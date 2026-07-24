@@ -1,18 +1,9 @@
-PROJECT D Ver.4.0 更新ファイル
+PROJECT D Ver.4.8e 更新ファイル
 
-1. このZIPを解凍します。
-2. 中のファイルをGitHubリポジトリ dv3-f2p-lab の直下へアップロードします。
-3. 同名ファイルは上書きします。
-4. Commit changes を実行します。
+追加：ラキオン／シャープテイル／アップルチーク
+更新：ランキング（25体）、図鑑検索データ、更新履歴、サイトマップ
 
-今回の追加・更新
-- HTML 9ページ
-- styles.css
-- sitemap.xml
-- robots.txt
+このZIPを展開し、中のファイルをサイトのルートへ上書きアップロードしてください。
+フォルダごとではなく、HTML・JS・JPG・XML・TXTを現在のindex.htmlと同じ階層へ配置します。
 
-アップロード後、Google Search Consoleで次を実施してください。
-- URLプレフィックス: https://hiyu3341-debug.github.io/dv3-f2p-lab/
-- 所有権確認
-- サイトマップ欄に sitemap.xml を送信
-- URL検査でトップページ、dragons.html、zephyros.html、firetail.htmlのインデックス登録をリクエスト
+今回の個別ページは登録速度優先の簡易版で、各ドラゴン2枚（★5 Lv.50能力値／スキル・交配情報）を掲載しています。

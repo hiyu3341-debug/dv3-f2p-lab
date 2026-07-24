@@ -1,94 +1,93 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/dragons.html</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/zephyros.html</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/firetail.html</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/hyogakoryu.html</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/grade.html</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/ranking.html</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/tools.html</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/about.html</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/updates.html</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/pierrot.html</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/genbu.html</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/typhoon.html</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url><loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/todorutomutomu.html</loc><lastmod>2026-07-23</lastmod></url>
-  <url><loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/leaf.html</loc><lastmod>2026-07-23</lastmod></url>
-  <url><loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/swamp.html</loc><lastmod>2026-07-23</lastmod></url>
-  <url><loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/alien.html</loc><lastmod>2026-07-23</lastmod></url>
-  <url><loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/lunera.html</loc><lastmod>2026-07-23</lastmod></url>
-  <url><loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/sham.html</loc><lastmod>2026-07-23</lastmod></url>
-  <url>
-    <loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/grade-research.html</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-</urlset>
+<url>
+<loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/</loc>
+<lastmod>2026-07-23</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/dragons.html</loc>
+<lastmod>2026-07-23</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/zephyros.html</loc>
+<lastmod>2026-07-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/firetail.html</loc>
+<lastmod>2026-07-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/hyogakoryu.html</loc>
+<lastmod>2026-07-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/grade.html</loc>
+<lastmod>2026-07-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/ranking.html</loc>
+<lastmod>2026-07-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/tools.html</loc>
+<lastmod>2026-07-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/about.html</loc>
+<lastmod>2026-07-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/updates.html</loc>
+<lastmod>2026-07-23</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/pierrot.html</loc>
+<lastmod>2026-07-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/genbu.html</loc>
+<lastmod>2026-07-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/typhoon.html</loc>
+<lastmod>2026-07-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url><loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/todorutomutomu.html</loc><lastmod>2026-07-23</lastmod></url>
+<url><loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/leaf.html</loc><lastmod>2026-07-23</lastmod></url>
+<url><loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/swamp.html</loc><lastmod>2026-07-23</lastmod></url>
+<url><loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/alien.html</loc><lastmod>2026-07-23</lastmod></url>
+<url><loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/lunera.html</loc><lastmod>2026-07-23</lastmod></url>
+<url><loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/sham.html</loc><lastmod>2026-07-23</lastmod></url>
+<url>
+<loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/grade-research.html</loc>
+<lastmod>2026-07-23</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url><loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/lakion.html</loc></url><url><loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/sharptail.html</loc></url><url><loc>https://hiyu3341-debug.github.io/dv3-f2p-lab/applecheek.html</loc></url></urlset>
