@@ -299,3 +299,6 @@ footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;paddin
 .page-hero .detail-shared-thumb{float:left;width:96px;height:96px;object-fit:contain;margin:0 16px 8px 0;border-radius:14px;background:#081a2a;border:1px solid rgba(39,219,194,.25)}
 .data-audit-note{margin:20px auto;max-width:1100px}
 @media(max-width:640px){.page-hero .detail-shared-thumb{width:78px;height:78px;margin-right:12px}.page-hero{overflow:hidden}}
+
+/* Ver.5.0 RC2 unified individual-page portrait */
+.page-hero{position:relative}.detail-shared-portrait{float:left;width:112px;height:112px;margin:0 18px 10px 0;padding:8px;overflow:hidden;border-radius:18px;background:linear-gradient(145deg,#10283d,#081827);border:1px solid rgba(39,219,194,.32);box-shadow:0 10px 28px rgba(0,0,0,.24)}.detail-shared-thumb{display:block;width:100%;height:100%;object-fit:contain;object-position:center;border-radius:11px;background:#f8f0df}.detail-shared-portrait.is-error{display:grid;place-items:center;background:#0c1d30}.detail-shared-portrait.is-error::after{content:"NO IMAGE";font-size:.65rem;font-weight:900;letter-spacing:.08em;color:#7890a8}.detail-shared-portrait.is-error img{display:none}@media(max-width:640px){.detail-shared-portrait{width:88px;height:88px;margin:0 12px 8px 0;padding:6px;border-radius:14px}.page-hero h1{line-height:1.2}}

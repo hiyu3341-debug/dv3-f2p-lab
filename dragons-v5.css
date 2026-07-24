@@ -19,3 +19,13 @@
 .v5-thumb.is-error{display:grid;place-items:center;background:linear-gradient(145deg,#13263a,#0c1b2d)}
 .v5-thumb.is-error::after{content:"NO IMAGE";font-size:.58rem;font-weight:900;letter-spacing:.08em;color:#7890a8}
 .v5-thumb.is-error img{display:none}
+
+/* Ver.5.0 RC2 polish */
+.v5-counts{grid-template-columns:repeat(3,1fr)}
+.v5-card{content-visibility:auto;contain-intrinsic-size:150px}
+.v5-card:hover{border-color:#2f718e;background:linear-gradient(145deg,#122a42,#0b1d31)}
+.v5-thumb.is-placeholder{background:#0c1d30}.v5-thumb.is-placeholder img{object-fit:cover}
+.v5-card-foot{display:flex;justify-content:space-between;gap:8px;margin-top:6px;color:#91a6bc;font-size:.64rem}
+.v5-badge.rarity-legendary{background:rgba(239,176,54,.18);color:#ffd27a;border:1px solid rgba(239,176,54,.25)}
+.v5-badge.rarity-epic{background:#342a68;color:#c8adff}.v5-badge.rarity-rare{background:rgba(63,149,222,.18);color:#8fcaff;border:1px solid rgba(63,149,222,.22)}
+@media(max-width:520px){.v5-counts{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.v5-counts>div{padding:10px 4px}.v5-counts span{font-size:.62rem}.v5-counts strong{font-size:1.35rem}}

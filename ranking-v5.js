@@ -1,5 +1,5 @@
 (()=>{
-  const dragons=window.PROJECT_D_DRAGONS||[];
+  const core=window.PROJECT_D_CORE; const dragons=core?core.all():(window.PROJECT_D_DRAGONS||[]);
   const fmt=n=>Number(n||0).toLocaleString('ja-JP');
   const localUrl=url=>{if(!url)return '#';try{return new URL(url,location.href).pathname.split('/').pop()||'#';}catch{return url;}};
   const esc=s=>String(s??'').replace(/[&<>\"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',"'":'&#39;'}[c]));
