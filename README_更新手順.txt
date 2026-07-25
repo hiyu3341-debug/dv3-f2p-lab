@@ -1,18 +1,18 @@
-PROJECT D Ver.4.6 等級補正研究ページ追加
+PROJECT D Ver.5.0 RC5 サムネイル追加（第1弾）
 
-【アップロードするファイル】
-・grade-research.html（新規）
-・grade_bonus_graph.png（新規）
-・index.html（差し替え）
-・updates.html（差し替え）
-・sitemap.xml（差し替え）
-・styles.css（差し替え）
+追加対象:
+- ヘネス
+- エレボス
+- 白龍
 
-【手順】
-1. ZIPを解凍します。
-2. GitHubの dv3-f2p-lab リポジトリを開きます。
-3. Add file → Upload files を選びます。
-4. 上記6ファイルをまとめてアップロードします。
-5. Commit changes を押します。
+GitHubリポジトリ直下へ、このZIP内のファイルをアップロードして上書きしてください。
+フォルダの新規作成は不要です。
 
-既存ファイルは同名で上書きしてください。script.jsは変更していないためアップロード不要です。
+変更ファイル:
+- dragons-data.js
+- index.html
+- dragons.html
+- ranking.html
+- thumb-henes.webp
+- thumb-erebos.webp
+- thumb-white-dragon.webp
