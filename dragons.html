@@ -6,9 +6,29 @@
 <meta name="theme-color" content="#07111f">
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="stylesheet" href="styles.css?v=5.0b2">
-<link rel="stylesheet" href="dragons-v5.css?v=5.0rc5">
-<meta name="description" content="PROJECT D ドラゴン図鑑 Ver.5.0 RC5.1。スマートフォン向けコンパクト一覧。">
-<title>ドラゴン図鑑 Ver.5.0 RC5.1｜PROJECT D</title>
+<link rel="stylesheet" href="dragons-v5.css?v=5.1.2">
+<meta name="description" content="PROJECT D ドラゴン図鑑 Ver.5.1.2。スマートフォン向けコンパクト一覧。">
+<title>ドラゴン図鑑 Ver.5.1.2｜PROJECT D</title>
+
+<style id="ver511-scroll-fix">
+/* Ver.5.1.2: 図鑑の検索欄・ページ送りを通常の文書順で表示 */
+html,body{min-height:100%;overflow-x:hidden;overflow-y:auto!important}
+body.dragons-v5-page{height:auto!important;min-height:100dvh;overscroll-behavior-y:auto}
+.dragons-v5-page .v5-shell{display:flex!important;flex-direction:column!important;height:auto!important;min-height:0!important;overflow:visible!important}
+.dragons-v5-page .v5-breadcrumb{order:1!important}
+.dragons-v5-page .v5-intro{order:2!important}
+.dragons-v5-page .v5-controls{order:3!important;position:static!important;inset:auto!important;transform:none!important;z-index:auto!important}
+.dragons-v5-page .v5-search{display:block!important;position:static!important}
+.dragons-v5-page .v5-search input{display:block!important;visibility:visible!important;opacity:1!important}
+.dragons-v5-page .v5-result-line{order:4!important}
+.dragons-v5-page .v5-dragon-list{order:5!important}
+.dragons-v5-page .v5-empty{order:6!important}
+.dragons-v5-page .v5-pagination{order:7!important;position:static!important;inset:auto!important;transform:none!important;z-index:auto!important}
+@media(max-width:640px){
+  .dragons-v5-page .v5-shell{padding-top:14px!important}
+  .dragons-v5-page .v5-controls{scroll-margin-top:92px}
+}
+</style>
 </head>
 <body class="dragons-v5-page">
 <header class="topbar">
@@ -20,7 +40,7 @@
 <main class="v5-shell">
 <nav class="v5-breadcrumb"><a href="index.html">ホーム</a><span>›</span><span>ドラゴン図鑑</span></nav>
 <section class="v5-intro">
-<div><p class="v5-kicker">DRAGON DATABASE · Ver.5.0 RC5.1</p><h1>ドラゴン図鑑</h1><p>画像と主要情報を、スマートフォンで素早く確認できるコンパクト一覧です。</p></div>
+<div><p class="v5-kicker">DRAGON DATABASE · Ver.5.1.2</p><h1>ドラゴン図鑑</h1><p>画像と主要情報を、スマートフォンで素早く確認できるコンパクト一覧です。</p></div>
 <div class="v5-counts"><div><span>登録ドラゴン数</span><strong id="registeredCount">0<small>体</small></strong></div><div><span>実測データ数</span><strong id="measuredCount">0<small>体</small></strong></div><div><span>確認待ち</span><strong id="pendingCount">0<small>体</small></strong></div></div>
 </section>
 <section class="v5-controls" aria-label="検索と絞り込み">
@@ -40,6 +60,6 @@
 </main>
 <footer><div><strong>PROJECT D</strong><span>ドラゴンビレッジ3 無課金攻略研究所</span></div><p>非公式・プレイヤー独自検証サイト。ゲーム内仕様は更新により変更される場合があります。</p></footer>
 <script src="dragons-data.js?v=5.1.1-48"></script>
-<script src="dragons-v5.js?v=5.0rc5"></script>
+<script src="dragons-v5.js?v=5.1.2"></script>
 </body>
 </html>
