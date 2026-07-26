@@ -1395,7 +1395,103 @@ window.PROJECT_D_DRAGONS = [
     "image": "cat-dragon-status.webp",
     "thumb": "thumb-cat-dragon.webp",
     "attribute": "闇・魂"
-  }
+  },
+  {
+  "name": "ウィッチドラゴン",
+  "rarity": "Epic",
+  "role": "magic",
+  "ability": "不吉な同行",
+  "effect": "被撃時、25%の確率で敵を侵食状態にする。魂、鋼属性ドラゴンは侵食状態が適用されない。",
+  "star": "★5 Lv.50",
+  "hp": 928,
+  "atk": 1064,
+  "def": 699,
+  "mag": 1244,
+  "res": 972,
+  "spd": 1108,
+  "grade": "confirmed",
+  "url": "witch-dragon.html",
+  "image": "witch-dragon-status.webp",
+  "thumb": "thumb-witch-dragon.webp",
+  "attribute": "闇・魂"
+},
+  {
+  "name": "リツ",
+  "rarity": "Epic",
+  "role": "magic",
+  "ability": "疲労回復",
+  "effect": "睡眠状態になった時、解除されるまでのターン数が半分に減少する。",
+  "star": "★5 Lv.50",
+  "hp": 929,
+  "atk": 1049,
+  "def": 913,
+  "mag": 1229,
+  "res": 913,
+  "spd": 984,
+  "grade": "confirmed",
+  "url": "ritsu.html",
+  "image": "ritsu-status.webp",
+  "thumb": "thumb-ritsu.webp",
+  "attribute": "闇・光"
+},
+  {
+  "name": "バアル",
+  "rarity": "Epic",
+  "role": "magic",
+  "ability": "束縛",
+  "effect": "このドラゴンが存在する間、敵を束縛し、ドラゴン交代行動を選択できないようにする。",
+  "star": "★5 Lv.50",
+  "hp": 868,
+  "atk": 1092,
+  "def": 868,
+  "mag": 1228,
+  "res": 868,
+  "spd": 1092,
+  "grade": "confirmed",
+  "url": "baal.html",
+  "image": "baal-status.webp",
+  "thumb": "thumb-baal.webp",
+  "attribute": "闇・雷"
+},
+  {
+  "name": "クレプト",
+  "rarity": "Epic",
+  "role": "physical",
+  "ability": "鋭い鱗",
+  "effect": "被撃時、50%の確率で相手の最大体力の1/8分のダメージを与える。",
+  "star": "★5 Lv.50",
+  "hp": 927,
+  "atk": 1156,
+  "def": 1156,
+  "mag": 1063,
+  "res": 1063,
+  "spd": 927,
+  "grade": "confirmed",
+  "url": "klept.html",
+  "image": "klept-status.webp",
+  "thumb": "thumb-klept.webp",
+  "attribute": "闇・地"
+},
+  {
+  "name": "ラグテール",
+  "rarity": "Epic",
+  "role": "physical",
+  "ability": "乱暴な力",
+  "effect": "物理攻撃を行う時、自身の攻撃能力値を1.5倍で計算し、スキルの命中率は0.8倍で適用する。",
+  "star": "★5 Lv.50",
+  "hp": 1004,
+  "atk": 1184,
+  "def": 1004,
+  "mag": 912,
+  "res": 912,
+  "spd": 1004,
+  "grade": "confirmed",
+  "url": "ragtail.html",
+  "image": "ragtail-status.webp",
+  "thumb": "thumb-ragtail.webp",
+  "attribute": "闇・鋼"
+}
+
 ];
 
 
@@ -1414,7 +1510,7 @@ window.PROJECT_D_DRAGONS = [
   const ranked=[...dragons].sort((a,b)=>b.total-a.total||b.hp-a.hp||a.name.localeCompare(b.name,'ja'));
   ranked.forEach((dragon,index)=>{dragon.totalRank=index+1;});
   window.PROJECT_D_CORE={
-    version:'5.1.2-64',
+    version:'5.1.3-79',
     stats:[...stats],
     all:()=>dragons,
     count:()=>dragons.length,
