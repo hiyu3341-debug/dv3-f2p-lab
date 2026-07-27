@@ -1757,5 +1757,43 @@ window.PROJECT_D_DRAGONS = [
     "image": "scorpion-dragon-status.webp",
     "thumb": "thumb-scorpion-dragon.webp",
     "attribute": "地・闇"
+  },
+  {
+    "name": "タンピー",
+    "rarity": "Epic",
+    "role": "physical",
+    "ability": "千里眼",
+    "effect": "敵によって命中能力値が下落しない。",
+    "star": "★5 Lv.50",
+    "hp": 870,
+    "atk": 1186,
+    "def": 952,
+    "mag": 914,
+    "res": 1045,
+    "spd": 1050,
+    "grade": "confirmed",
+    "url": "tanpi.html",
+    "image": "tanpi-status.webp",
+    "thumb": "thumb-tanpi.webp",
+    "attribute": "地・魂"
+  },
+  {
+    "name": "マスタードハンマー",
+    "rarity": "Epic",
+    "role": "physical",
+    "ability": "強心臓",
+    "effect": "敵によって自身の攻撃能力値が下落しない。",
+    "star": "★5 Lv.50",
+    "hp": 895,
+    "atk": 988,
+    "def": 1260,
+    "mag": 623,
+    "res": 895,
+    "spd": 1081,
+    "grade": "confirmed",
+    "url": "mustard-hammer.html",
+    "image": "mustard-hammer-status.webp",
+    "thumb": "thumb-mustard-hammer.webp",
+    "attribute": "地・夢"
   }
 ];
