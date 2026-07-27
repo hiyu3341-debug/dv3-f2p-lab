@@ -2206,6 +2206,46 @@ window.PROJECT_D_DRAGONS = [
     "thumb": "thumb-patroa.webp",
     "attribute": "炎・魂"
   }
+,
+  {
+    "name": "オニゴン",
+    "rarity": "Rare",
+    "role": "magic",
+    "ability": "同化",
+    "effect": "被撃時、主属性が被撃したスキルの属性に変更される。",
+    "star": "★5 Lv.50",
+    "hp": 1005,
+    "atk": 789,
+    "def": 815,
+    "mag": 918,
+    "res": 959,
+    "spd": 701,
+    "grade": "confirmed",
+    "url": "onigon.html",
+    "image": "onigon-status.webp",
+    "thumb": "thumb-onigon.webp",
+    "attribute": "魂"
+  },
+  {
+    "name": "朱雀",
+    "rarity": "Epic",
+    "role": "magic",
+    "ability": "必死の意志",
+    "effect": "体力が最大時、一度の被撃では戦闘不能にならず、体力が1だけ残る。",
+    "star": "★5 Lv.50",
+    "hp": 1012,
+    "atk": 957,
+    "def": 985,
+    "mag": 1366,
+    "res": 1241,
+    "spd": 1274,
+    "grade": "confirmed",
+    "url": "suzaku.html",
+    "image": "suzaku-status.webp",
+    "thumb": "thumb-suzaku.webp",
+    "attribute": "炎・風・光"
+  }
+
 ];
 
 // 6能力合計を常に再計算し、図鑑表示とランキングの並びを同期する。
