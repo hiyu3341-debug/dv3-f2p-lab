@@ -1986,4 +1986,23 @@ window.PROJECT_D_DRAGONS = [
     "thumb": "thumb-liberte.webp",
     "attribute": "風・光"
   }
+  ,{
+    "name": "ベレト",
+    "rarity": "Epic",
+    "role": "physical",
+    "ability": "千里眼",
+    "effect": "敵によって命中能力値が下落しない。",
+    "star": "★5 Lv.50",
+    "hp": 901,
+    "atk": 1053,
+    "def": 1206,
+    "mag": 852,
+    "res": 874,
+    "spd": 863,
+    "grade": "confirmed",
+    "url": "belet.html",
+    "image": "belet-status.webp",
+    "thumb": "thumb-belet.webp",
+    "attribute": "風・闇"
+  }
 ];
