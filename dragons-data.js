@@ -662,20 +662,21 @@ window.PROJECT_D_DRAGONS = [
   {
     "name": "ナマケモノドラゴン",
     "rarity": "Epic",
-    "role": "unknown",
+    "role": "physical",
     "ability": "天下泰平",
-    "effect": "効果詳細未確認",
+    "effect": "スキルでダメージを与えたり受けたりする際、相手の能力値の変化を無視してダメージを計算する。ただし、速度能力値の変化は無視されない。",
     "star": "★5 Lv.50",
     "hp": 1214,
     "atk": 1126,
-    "def": 1126,
+    "def": 1026,
     "mag": 941,
     "res": 941,
     "spd": 669,
     "grade": "confirmed",
     "url": "sloth.html",
-    "thumb": "thumb-placeholder.png",
-    "attribute": "未確認"
+    "thumb": "thumb-sloth.webp",
+    "attribute": "地・夢",
+    "image": "sloth-status.webp"
   },
   {
     "name": "ブルーファイアーテイル",
@@ -1680,33 +1681,81 @@ window.PROJECT_D_DRAGONS = [
     "image": "emerald-dragon-status.webp",
     "thumb": "thumb-emerald-dragon.webp",
     "attribute": "光・鋼"
+  },
+  {
+    "name": "ファット",
+    "rarity": "Epic",
+    "role": "physical",
+    "ability": "狂乱",
+    "effect": "自身に状態異常が適用された状態で攻撃する時、ダメージが1.5倍で適用される。",
+    "star": "★5 Lv.50",
+    "hp": 730,
+    "atk": 1231,
+    "def": 1411,
+    "mag": 1138,
+    "res": 779,
+    "spd": 730,
+    "grade": "confirmed",
+    "url": "fat.html",
+    "image": "fat-status.webp",
+    "thumb": "thumb-fat.webp",
+    "attribute": "鋼・夢"
+  },
+  {
+    "name": "ナイトドラゴン",
+    "rarity": "Epic",
+    "role": "physical",
+    "ability": "強心臓",
+    "effect": "敵によって自身の攻撃能力値が下落しない。",
+    "star": "★5 Lv.50",
+    "hp": 957,
+    "atk": 957,
+    "def": 957,
+    "mag": 957,
+    "res": 957,
+    "spd": 957,
+    "grade": "confirmed",
+    "url": "night-dragon.html",
+    "image": "night-dragon-status.webp",
+    "thumb": "thumb-night-dragon.webp",
+    "attribute": "鋼・魂"
+  },
+  {
+    "name": "マッドドラゴン",
+    "rarity": "Epic",
+    "role": "physical",
+    "ability": "沼",
+    "effect": "相手が交代行動を選択できないようにする。黄昏属性ドラゴンと空中浮揚アビリティを保有するドラゴンは効果を受けない。",
+    "star": "★5 Lv.50",
+    "hp": 1033,
+    "atk": 1354,
+    "def": 951,
+    "mag": 951,
+    "res": 727,
+    "spd": 727,
+    "grade": "confirmed",
+    "url": "mad-dragon.html",
+    "image": "mad-dragon-status.webp",
+    "thumb": "thumb-mad-dragon.webp",
+    "attribute": "地・水"
+  },
+  {
+    "name": "スコーピオンドラゴン",
+    "rarity": "Epic",
+    "role": "physical",
+    "ability": "耐性",
+    "effect": "侵食状態にならない。",
+    "star": "★5 Lv.50",
+    "hp": 969,
+    "atk": 1171,
+    "def": 833,
+    "mag": 833,
+    "res": 833,
+    "spd": 1106,
+    "grade": "confirmed",
+    "url": "scorpion-dragon.html",
+    "image": "scorpion-dragon-status.webp",
+    "thumb": "thumb-scorpion-dragon.webp",
+    "attribute": "地・闇"
   }
-];;
-
-
-/* PROJECT D CORE Ver.5.0 RC5 */
-(()=>{
-  const stats=['hp','atk','def','mag','res','spd'];
-  const dragons=Array.isArray(window.PROJECT_D_DRAGONS)?window.PROJECT_D_DRAGONS:[];
-  dragons.forEach((dragon,index)=>{
-    stats.forEach(key=>{dragon[key]=Number(dragon[key])||0;});
-    dragon.total=stats.reduce((sum,key)=>sum+dragon[key],0);
-    dragon.attribute=dragon.attribute||'未確認';
-    dragon.role=dragon.role||'unknown';
-    dragon.grade=dragon.grade||'unconfirmed';
-    dragon._registeredIndex=index;
-  });
-  const ranked=[...dragons].sort((a,b)=>b.total-a.total||b.hp-a.hp||a.name.localeCompare(b.name,'ja'));
-  ranked.forEach((dragon,index)=>{dragon.totalRank=index+1;});
-  window.PROJECT_D_CORE={
-    version:'5.1.4-89',
-    stats:[...stats],
-    all:()=>dragons,
-    count:()=>dragons.length,
-    measuredCount:()=>dragons.filter(d=>d.grade==='confirmed').length,
-    pendingCount:()=>dragons.filter(d=>d.attribute==='未確認'||d.role==='unknown'||String(d.thumb||'').includes('placeholder')).length,
-    attributes:()=>[...new Set(dragons.flatMap(d=>String(d.attribute||'未確認').split('・').map(v=>v.trim()).filter(Boolean)))],
-    ranked:()=>[...ranked],
-    byName:name=>dragons.find(d=>d.name===name)||null
-  };
-})();
+];
