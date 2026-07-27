@@ -1,17 +1,17 @@
 <!DOCTYPE html>
+
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#07111f">
-<link rel="icon" href="favicon.png" type="image/png">
-<link rel="stylesheet" href="styles.css?v=5.0b2">
-<link rel="stylesheet" href="dragons-v5.css?v=5.1.3">
-<meta name="description" content="PROJECT D ドラゴン図鑑 Ver.5.1.3。スマートフォン向けコンパクト一覧。">
-<title>ドラゴン図鑑 Ver.5.1.3｜PROJECT D</title>
-
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<meta content="#07111f" name="theme-color"/>
+<link href="favicon.png" rel="icon" type="image/png"/>
+<link href="styles.css?v=5.0b2" rel="stylesheet"/>
+<link href="dragons-v5.css?v=5.1.2" rel="stylesheet"/>
+<meta content="PROJECT D ドラゴン図鑑 Ver.5.1.2。スマートフォン向けコンパクト一覧。" name="description"/>
+<title>ドラゴン図鑑 Ver.5.1.2｜PROJECT D</title>
 <style id="ver511-scroll-fix">
-/* Ver.5.1.3: 図鑑の検索欄・ページ送りを通常の文書順で表示 */
+/* Ver.5.1.2: 図鑑の検索欄・ページ送りを通常の文書順で表示 */
 html,body{min-height:100%;overflow-x:hidden;overflow-y:auto!important}
 body.dragons-v5-page{height:auto!important;min-height:100dvh;overscroll-behavior-y:auto}
 .dragons-v5-page .v5-shell{display:flex!important;flex-direction:column!important;height:auto!important;min-height:0!important;overflow:visible!important}
@@ -29,37 +29,37 @@ body.dragons-v5-page{height:auto!important;min-height:100dvh;overscroll-behavior
   .dragons-v5-page .v5-controls{scroll-margin-top:92px}
 }
 </style>
-</head>
+<link href="https://hiyu3341-debug.github.io/dv3-f2p-lab/dragons.html" rel="canonical"/></head>
 <body class="dragons-v5-page">
 <header class="topbar">
-<a class="brand" href="index.html" aria-label="ホームへ"><img class="brand-logo" src="project_d_logo.jpg" alt="Project D ロゴ"><span><strong>PROJECT D</strong><small>ドラゴンビレッジ3 無課金攻略研究所</small></span></a>
-<button class="menu-button" id="menuButton" type="button" aria-label="メニューを開く" aria-expanded="false">☰</button>
-<nav id="mainNav"><a href="index.html">ホーム</a><a href="ranking.html">ランキング</a><a href="dragons.html" aria-current="page">ドラゴン図鑑</a><a href="grade.html">等級解析</a><a href="grade-research.html">研究室</a>
+<a aria-label="ホームへ" class="brand" href="index.html"><img alt="Project D ロゴ" class="brand-logo" src="project_d_logo.jpg"/><span><strong>PROJECT D</strong><small>ドラゴンビレッジ3 無課金攻略研究所</small></span></a>
+<button aria-expanded="false" aria-label="メニューを開く" class="menu-button" id="menuButton" type="button">☰</button>
+<nav id="mainNav"><a href="index.html">ホーム</a><a href="ranking.html">ランキング</a><a aria-current="page" href="dragons.html">ドラゴン図鑑</a><a href="grade.html">等級解析</a><a href="grade-research.html">研究室</a>
 <a href="community.html">海外コミュニティ研究</a><a href="tools.html">計算ツール</a><a href="about.html">Project Dについて</a><a href="updates.html">更新履歴</a></nav>
 </header>
 <main class="v5-shell">
 <nav class="v5-breadcrumb"><a href="index.html">ホーム</a><span>›</span><span>ドラゴン図鑑</span></nav>
 <section class="v5-intro">
-<div><p class="v5-kicker">DRAGON DATABASE · Ver.5.1.3</p><h1>ドラゴン図鑑</h1><p>画像と主要情報を、スマートフォンで素早く確認できるコンパクト一覧です。</p></div>
+<div><p class="v5-kicker">DRAGON DATABASE · Ver.5.1.2</p><h1>ドラゴン図鑑</h1><p>画像と主要情報を、スマートフォンで素早く確認できるコンパクト一覧です。</p></div>
 <div class="v5-counts"><div><span>登録ドラゴン数</span><strong id="registeredCount">0<small>体</small></strong></div><div><span>実測データ数</span><strong id="measuredCount">0<small>体</small></strong></div><div><span>確認待ち</span><strong id="pendingCount">0<small>体</small></strong></div></div>
 </section>
-<section class="v5-controls" aria-label="検索と絞り込み">
-<label class="v5-search"><span class="sr-only">キーワード検索</span><input id="searchInput" type="search" placeholder="名前・属性・アビリティ・効果で検索" autocomplete="off"></label>
+<section aria-label="検索と絞り込み" class="v5-controls">
+<label class="v5-search"><span class="sr-only">キーワード検索</span><input autocomplete="off" id="searchInput" placeholder="名前・属性・アビリティ・効果で検索" type="search"/></label>
 <div class="v5-filter-grid">
 <label><span>レア度</span><select id="rarityFilter"><option value="all">すべて</option><option value="Epic">Epic</option><option value="Legendary">Legendary</option><option value="Rare">Rare</option></select></label>
 <label><span>役割</span><select id="roleFilter"><option value="all">すべて</option><option value="physical">物理</option><option value="magic">魔法</option><option value="defense">防御</option><option value="support">支援</option></select></label>
 <label><span>属性</span><select id="attributeFilter"><option value="all">すべて</option></select></label>
 <label><span>並び順</span><select id="sortFilter"><option value="registered">登録順</option><option value="name">名前順</option><option value="total">総合値順</option><option value="totalRank">総合順位順</option><option value="hp">HP順</option><option value="atk">攻撃順</option><option value="def">防御順</option><option value="mag">魔法順</option><option value="res">抵抗順</option><option value="spd">速度順</option></select></label>
 </div>
-<button id="resetFilters" class="v5-reset" type="button">条件をリセット</button>
+<button class="v5-reset" id="resetFilters" type="button">条件をリセット</button>
 </section>
-<div class="v5-result-line"><span id="resultSummary"></span><label>表示件数 <select id="pageSize"><option value="10">10体</option><option value="20" selected>20体</option><option value="999">すべて</option></select></label></div>
-<section id="dragonList" class="v5-dragon-list" aria-live="polite"></section>
-<p id="noResults" class="v5-empty" hidden>条件に一致するドラゴンが見つかりませんでした。</p>
-<nav id="pagination" class="v5-pagination" aria-label="ページ切り替え"></nav>
+<div class="v5-result-line"><span id="resultSummary"></span><label>表示件数 <select id="pageSize"><option value="10">10体</option><option selected="" value="20">20体</option><option value="999">すべて</option></select></label></div>
+<section aria-live="polite" class="v5-dragon-list" id="dragonList"></section>
+<p class="v5-empty" hidden="" id="noResults">条件に一致するドラゴンが見つかりませんでした。</p>
+<nav aria-label="ページ切り替え" class="v5-pagination" id="pagination"></nav>
 </main>
 <footer><div><strong>PROJECT D</strong><span>ドラゴンビレッジ3 無課金攻略研究所</span></div><p>非公式・プレイヤー独自検証サイト。ゲーム内仕様は更新により変更される場合があります。</p></footer>
-<script src="dragons-data.js?v=5.1.4-89"></script>
-<script src="dragons-v5.js?v=5.1.3"></script>
+<script src="dragons-data.js?v=5.1.1-48"></script>
+<script src="dragons-v5.js?v=5.1.2"></script>
 </body>
 </html>
